@@ -12,6 +12,12 @@ Workshop      | [View](https://www.google.com)
 GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
 Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) 
 
+First Header  | Second Header
+------------- | -------------
+Content Cell  | [View](https://www.google.com) 
+Content Cell  | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+Content Cell  | [LeoLanese](https://twitter.com/leolaneseltd) 
+
 ----
 
 Topics:
