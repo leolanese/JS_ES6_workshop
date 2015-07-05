@@ -13,11 +13,11 @@ Content Cell  | Content Cell
 
 
 
-| Tables        | Content            |
-| ------------- |:-------------:| 
-| Workshop      | [View](https://www.google.com) |
-| GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) |
-| Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) |
+ Tables       | Content            
+------------- |------------- 
+Workshop      | [View](https://www.google.com) 
+GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git)  
+Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) 
 
 ----
 
