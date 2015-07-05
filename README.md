@@ -7,7 +7,6 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 
 Further information:
 
-
 Looking for   | Go to
 ------------- | -------------
 Code          | [View](https://www.google.com) 
@@ -19,14 +18,24 @@ Char       | [LeoLanese Twitter](https://twitter.com/leolaneseltd)
 Topics:
 
 1. What is ES6? 
-2- Do I need to migrate my javaScript code to ECMAScript 6?
-3- Key Features in ES6
-4- Should I Use ES6 Now or Wait?. How to start using ES6 now?
-5- 'Hello ES6 World'?
-6- What next?
+2. Do I need to migrate my javaScript code to ECMAScript 6?
+3. Key Features in ES6
+4. Should I Use ES6 Now or Wait?. How to start using ES6 now?
+5. 'Hello ES6 World'?
+6. What next?
 
 ----
-1- What is ES6?: 
+# 1- What is ES6?: 
+
+## Goal: Be a better language
+
+### “ES6 will change the way you write JS code.”
+
+To tell you the true, when I read this quote it’s scared me a little bit, thinking old code old knowledge could go to the bin.
+Reality check: ES6 is an enhancement of ES5. ES6 brings new features, solve few problems and it can be partially or complete incorporated to our code and make things easy to understand.
+
+
+> 
 
 ```javascript
 var s = "JavaScript syntax highlighting";
