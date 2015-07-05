@@ -5,17 +5,12 @@
 
 ECMA Script 6 is already here, and more and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, we can start using ES6 now with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
 
-Clone workshop GITHUB:
-[workshop](https://github.com/sirwilliam/ES6_workshop.git)
-
-Clone workshop Slides:
-
-
-| Tables        | Content       |  Link  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | workshop      | [Slides](https://www.google.com) |
-| col 2 is      | GITHUB        |   (https://github.com/sirwilliam/ES6_workshop.git) |
-| zebra stripes | are neat      |    $1 |
+Further information:
+| Tables        | Content            |
+| ------------- |:------------------:|
+| Workshop      | [View](https://www.google.com) |
+| GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) |
+| Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) |
 
 ----
 
@@ -35,5 +30,17 @@ Topics:
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
+
+---
+6) My favourites ES6 playgrounds:
+Further information:
+| Service              | Link               |
+| -------------------- |:------------------:|
+| Typescriptlang       | [View](http://www.typescriptlang.org/Playground) |
+| Babeljs              | [View](https://babeljs.io/repl/) |
+| Traceur              | [View](http://google.github.io/traceur-compiler/demo/repl.html#) |
+| ES6Fiddle            | [View](http://www.es6fiddle.net/) |
+
 
 
