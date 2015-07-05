@@ -40,9 +40,9 @@ Further information:
 
 Looking for   | Go to
 ------------- | -------------
-Typescriptlang          | [View](http://www.typescriptlang.org/Playground)
-Babeljs          | [View](https://babeljs.io/repl/)
-Traceur      | [View](http://google.github.io/traceur-compiler/demo/repl.html#)
-ES6Fiddle       | [View](http://www.es6fiddle.net/)
+Typescriptlang          | [Link](http://www.typescriptlang.org/Playground)
+Babeljs          | [Link](https://babeljs.io/repl/)
+Traceur      | [Link](http://google.github.io/traceur-compiler/demo/repl.html#)
+ES6Fiddle       | [Link](http://www.es6fiddle.net/)
 
 
