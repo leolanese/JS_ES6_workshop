@@ -8,7 +8,7 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 Further information:
 
 
-Header        | Where
+Looking for   | Where
 ------------- | -------------
 Workshop      | [View](https://www.google.com) 
 GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
