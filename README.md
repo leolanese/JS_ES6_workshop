@@ -8,7 +8,7 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 Further information:
 
 
-Looking for   | Where
+Looking for   | Go to
 ------------- | -------------
 Code          | [View](https://www.google.com) 
 Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
@@ -37,14 +37,8 @@ alert(s);
 ---
 6) My favourites ES6 playgrounds:
 Further information:
-| Service              | Link               |
-| -------------------- |:------------------:|
-| Typescriptlang       | [View](http://www.typescriptlang.org/Playground) |
-| Babeljs              | [View](https://babeljs.io/repl/) |
-| Traceur              | [View](http://google.github.io/traceur-compiler/demo/repl.html#) |
-| ES6Fiddle            | [View](http://www.es6fiddle.net/) |
 
-Looking for   | Where
+Looking for   | Go to
 ------------- | -------------
 Typescriptlang          | [View](http://www.typescriptlang.org/Playground)
 Babeljs          | [View](https://babeljs.io/repl/)
