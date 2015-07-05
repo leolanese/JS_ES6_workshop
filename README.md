@@ -9,7 +9,13 @@ Clone workshop GITHUB:
 [workshop](https://github.com/sirwilliam/ES6_workshop.git)
 
 Clone workshop Slides:
-[Slides](https://www.google.com)
+
+
+| Tables        | Content       |  Link  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | workshop      | [Slides](https://www.google.com) |
+| col 2 is      | GITHUB        |   (https://github.com/sirwilliam/ES6_workshop.git) |
+| zebra stripes | are neat      |    $1 |
 
 ----
 
