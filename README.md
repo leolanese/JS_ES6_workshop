@@ -12,7 +12,7 @@ Looking for   | Go to
 ------------- | -------------
 Code          | [View](https://www.google.com) 
 Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
-Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) 
+Char       | [LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
 
