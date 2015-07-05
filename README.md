@@ -10,8 +10,8 @@ Further information:
 
 Looking for   | Where
 ------------- | -------------
-Workshop      | [View](https://www.google.com) 
-GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+Code          | [View](https://www.google.com) 
+Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
 Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) 
 
 ----
