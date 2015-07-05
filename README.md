@@ -7,7 +7,7 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 
 Further information:
 | Tables        | Content            |
-| ------------- |:------------------:|
+| ------------- |:-------------:| 
 | Workshop      | [View](https://www.google.com) |
 | GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) |
 | Twitter       | [LeoLanese](https://twitter.com/leolaneseltd) |
