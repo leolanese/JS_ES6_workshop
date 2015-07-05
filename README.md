@@ -1,7 +1,7 @@
 # ES6 workshop
 ## The road to ECMAScript 6: New solutions for old JS problems.
 
-![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "Logo Title Text 1")
+![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "EcmaScript6")
 
 ECMA Script 6 is already here, and more and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, we can start using ES6 now with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
 
@@ -14,7 +14,6 @@ Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git)
 Char       | [LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
-
 Topics:
 
 1. What is ES6? 
@@ -49,6 +48,15 @@ We can be ready and prepared focusing on one thing in particular: ES6
 
 
 ---
+2.
+
+---
+3.
+
+---
+4.
+
+
 
 > 
 
@@ -59,7 +67,7 @@ alert(s);
 
 
 ---
-6) My favourites ES6 playgrounds:
+5) My favourites ES6 playgrounds:
 Further information:
 
 Looking for   | Go to
