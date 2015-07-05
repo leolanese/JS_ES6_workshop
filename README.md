@@ -46,9 +46,9 @@ Further information:
 
 Looking for   | Where
 ------------- | -------------
-Code          | [View](http://www.typescriptlang.org/Playground)
-Code          | [View](https://babeljs.io/repl/)
-Workshop      | [View](http://google.github.io/traceur-compiler/demo/repl.html#)
-Twitter       | [View](http://www.es6fiddle.net/)
+Typescriptlang          | [View](http://www.typescriptlang.org/Playground)
+Babeljs          | [View](https://babeljs.io/repl/)
+Traceur      | [View](http://google.github.io/traceur-compiler/demo/repl.html#)
+ES6Fiddle       | [View](http://www.es6fiddle.net/)
 
 
