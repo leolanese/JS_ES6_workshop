@@ -8,9 +8,9 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 Further information:
 Tables        | Content  
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+Content Cell  | [View](https://www.google.com) 
+Content Cell  | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+Content Cell  | [LeoLanese](https://twitter.com/leolaneseltd) 
 
 
  Tables       | Content            
