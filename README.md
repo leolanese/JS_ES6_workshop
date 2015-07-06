@@ -75,12 +75,12 @@ Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
 
 
 ## Further information:
-Looking for   | Go to
-------------- | -------------
-Typescriptlang          | [Link](http://www.typescriptlang.org/Playground)
-BabelJS          | [Link](https://babeljs.io/repl/)
-Traceur      | [Link](http://google.github.io/traceur-compiler/demo/repl.html#)
-ES6Fiddle       | [Link](http://www.es6fiddle.net/)
+Go to
+ -------------
+[Typescriptlang](http://www.typescriptlang.org/Playground)
+[BabelJS](https://babeljs.io/repl/)
+[Traceur](http://google.github.io/traceur-compiler/demo/repl.html#)
+[ES6Fiddle](http://www.es6fiddle.net/)
 
 ## RESOURCES:
 Looking for   | Go to
