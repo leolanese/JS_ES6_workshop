@@ -49,6 +49,21 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ---
 # 1- Key Features in ES6:
 
+01. Arrow functions
+02. Block-level scope
+03. Classes
+04. Constants
+05. Default parameters
+06. Destructuring
+07. Generators
+08. Map
+09. Modules
+10. Promises
+11. Rest parameters
+12. Set
+13. Template Strings
+
+
 ---
 # 3-  
 
