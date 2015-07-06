@@ -77,9 +77,9 @@ Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
 ## Further information:
 Looking for   | Go to
 ------------- | -------------
-Typescriptlang          |[Typescriptlang](http://www.typescriptlang.org/Playground)
-BabelJS       |[BabelJS](https://babeljs.io/repl/)
-Traceur        |[Traceur](http://google.github.io/traceur-compiler/demo/repl.html#)
+Typescriptlang          |[http://www.typescriptlang.org/](http://www.typescriptlang.org/Playground)
+BabelJS       |[babeljs.io](https://babeljs.io/repl/)
+Traceur        |[google.github.io](http://google.github.io/traceur-compiler/demo/repl.html#)
 ES6Fiddle          |[ES6Fiddle](http://www.es6fiddle.net/)
 
 ## RESOURCES:
