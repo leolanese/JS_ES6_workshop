@@ -47,13 +47,13 @@ We can be ready and prepared focusing on one thing in particular: ES6
 **There is no need**: ECMAScript 6 is a superset of ECMAScript 5. Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
 
 ---
-2. Key Features in ES6:
+# 1- Key Features in ES6:
 
 ---
-3. 
+# 3-  
 
 ---
-4. 
+# 4-
 
 
 > 
@@ -64,14 +64,19 @@ alert(s);
 ```
 
 ---
-5) My favourites ES6 playgrounds:
-Further information:
+# 5- My favourites ES6 playgrounds and Resources:
+## Further information:
 
 Looking for   | Go to
 ------------- | -------------
 Typescriptlang          | [Link](http://www.typescriptlang.org/Playground)
-Babeljs          | [Link](https://babeljs.io/repl/)
+BabelJS          | [Link](https://babeljs.io/repl/)
 Traceur      | [Link](http://google.github.io/traceur-compiler/demo/repl.html#)
 ES6Fiddle       | [Link](http://www.es6fiddle.net/)
 
+## RESOURCES:
 
+Looking for   | Go to
+------------- | -------------
+exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
+UnderstandingES6        | [Nicholas C. Zakas - Book](https://leanpub.com/understandinges6/read)
