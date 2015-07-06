@@ -65,8 +65,16 @@ alert(s);
 
 ---
 # 5- My favourites ES6 playgrounds and Resources:
-## Further information:
 
+## ES6 Features
+Looking for   | Go to
+------------- | -------------
+ES6Features  | [ES6](https://github.com/lukehoban/es6features)
+ECMAScript 6 compatibility Table | [Can I use ES6](http://kangax.github.io/compat-table/es6/)
+Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
+
+
+## Further information:
 Looking for   | Go to
 ------------- | -------------
 Typescriptlang          | [Link](http://www.typescriptlang.org/Playground)
@@ -75,7 +83,6 @@ Traceur      | [Link](http://google.github.io/traceur-compiler/demo/repl.html#)
 ES6Fiddle       | [Link](http://www.es6fiddle.net/)
 
 ## RESOURCES:
-
 Looking for   | Go to
 ------------- | -------------
 exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
