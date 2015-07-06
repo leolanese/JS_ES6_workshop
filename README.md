@@ -11,7 +11,7 @@ Looking for   | Go to
 ------------- | -------------
 Code          | [View](https://www.google.com) 
 Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
-Char       | [LeoLanese Twitter](https://twitter.com/leolaneseltd) 
+Char          | [LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
 Topics:
@@ -46,16 +46,14 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ### Do I need to migrate my javaScript code to ECMAScript 6?
 **There is no need**: ECMAScript 6 is a superset of ECMAScript 5. Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
 
+---
+2. Key Features in ES6:
 
 ---
-2.
+3. 
 
 ---
-3.
-
----
-4.
-
+4. 
 
 
 > 
@@ -64,7 +62,6 @@ We can be ready and prepared focusing on one thing in particular: ES6
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
-
 
 ---
 5) My favourites ES6 playgrounds:
