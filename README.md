@@ -77,30 +77,29 @@ The let keyword allows you to define variables within the scope of the block (bl
 
 >  Don't replace let for var
 
-### EJ:
+
 #### let w/function:
-[let w/function](http://www.es6fiddle.net/ibt75xzh/)
+[Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
 #### let w/looping:
-[let w/looping](http://www.es6fiddle.net/ibt7tkvh/)
+[Ej2: let w/looping](http://www.es6fiddle.net/ibt7tkvh/)
 
 
 ### const()
 We will be able to create constants and make sure its value won’t be changed
-[Example](http://www.es6fiddle.net/ibs2z9yg/)
+[Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
 
 ---
 ## 02. Arrow functions: =>
-Providing a work around to: ‘that = this’ or ‘bind()’
-With a more compact version of an ‘anonymous function syntax’.
+1.1 Providing a work around to: ‘that = this’ or ‘bind()’
+1.2 With a more compact version of an ‘anonymous function syntax’.
 
-Ej1
-[Example](http://www.es6fiddle.net/ibs23tom/)
+[Ej1: Example](http://www.es6fiddle.net/ibtfr5fk/)
 
-Ej2: ES5 Vs. ES6
-[ES5](http://jsfiddle.net/leolanese/uz9x15x7/)
-[ES6](http://www.es6fiddle.net/ibt3woe1/)
+[Ej2: ES5 Vs. ES6: ES5](http://jsfiddle.net/leolanese/uz9x15x7/)
+
+[Ej2: ES5 Vs. ES6: ES6](http://www.es6fiddle.net/ibtfwm70/)
 
 
 ---
@@ -109,19 +108,16 @@ Ej2: ES5 Vs. ES6
 
 ---
 ## 4- Classes and inheritance: class, extends, 
-JS doesn't have classes, it does something that’s called prototypes
-and while JS will still have prototypes, they’re going to add a little piece of what’s called syntactic sugar, or in other words, a simpler way of writing something on a different way.
+Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
 
->  Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
+> JS doesn't have classes, it does something that’s called prototypes JS will still have prototypes ES6 add syntactic sugar code on top of this.
 
-Ej1:
-[Classes and Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
-
+[Ej1: Classes and Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
 
 ---
 ## 05 Modules: 
 Modules are stored in files. 
-The goal for ECMAScript 6 modules was to create a format that both users of CommonJS and of AMD are happy with. We can do similar things that using AMD CommnJS:
+The goal for ECMAScript 6 modules is to create a format that both users of CommonJS and of AMD are happy with.
 
 ```javascript
 //------ lib.js ------
@@ -140,7 +136,7 @@ console.log( square(11) ); // 121
 console.log( diag(4, 3) ); // 5
 ```
 
-[NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
+[Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
 
 ---
 ## 05. New utility methods for Strings and Arrays
@@ -152,33 +148,33 @@ console.log(
 	['a', 'b', 'c'].fill("")
 );
 ```
-[fill](http://www.es6fiddle.net/ibt922uk/)
+[Ej1: fill](http://www.es6fiddle.net/ibt922uk/)
 
 ###  .find()
 ```javascript
 console.log( [1, 2, 3].find(x => x == 3) );
 ```
-[find](http://www.es6fiddle.net/ibt98kd2/)
+[Ej1: find](http://www.es6fiddle.net/ibt98kd2/)
 
 ### .findIndex()
 ```javascript
 [6, 8, -5].findIndex(x => x < 0)
 ```
-[findIndex](http://www.es6fiddle.net/ibt9a6nh/)
+[Ej1: findIndex](http://www.es6fiddle.net/ibt9a6nh/)
 
 ### .startsWith()
 ```javascript
 var str = 'Hello World!';
 console.log(str.startsWith('Hello')); // True
 ```
-[startsWith](http://www.es6fiddle.net/ibt9bihb/)
+[Ej1: startsWith](http://www.es6fiddle.net/ibt9bihb/)
 
 ### .endsWith()
 ```javascript
 var str = 'Hello World!';
 console.log(str.endsWith('Hello')); // False
 ```
-[endsWith](http://www.es6fiddle.net/ibt9dddr/)
+[Ej1: endsWith](http://www.es6fiddle.net/ibt9dddr/)
 
 ### .includes()
 ```javascript
@@ -186,7 +182,20 @@ var str = 'Hello World!';
 console.log(str.includes(' ')); // True
 console.log( 'JS '.repeat(3) ); // JS JS JS
 ```
-[includes](http://www.es6fiddle.net/ibt9ef15/)
+[Ej1: includes](http://www.es6fiddle.net/ibt9ef15/)
+
+### Array.of()
+```javascript
+var arr = new Array([1,2,3])
+var arr1 = [1, 2, 3];
+
+let arr2 = Array.of(1, 2, 3);
+
+console.log(arr);
+console.log(arr1);
+console.log(arr2);
+```
+[Ej1: Array.of](http://www.es6fiddle.net/ibtg9a0r/)
 
 ### Computed property keys
 ```javascript
@@ -196,7 +205,7 @@ let o2 = {[o1]: false,
 };
 console.log(JSON.stringify(o2));
 ```
-[Computed property keys](http://www.es6fiddle.net/ibnp05oa/)
+[Ej1: Computed property keys](http://www.es6fiddle.net/ibnp05oa/)
 
 ### Default parameter values: =
 ```javascript
@@ -206,14 +215,16 @@ function f(x, y=12) {
 } 
 console.log( f(3) == 15; )
 ```
-[Default parameter values](http://www.es6fiddle.net/ibtafirh/)
+[Ej1: Default parameter values](http://www.es6fiddle.net/ibtafirh/)
 
 
 ### Rest parameters values: ...
-Rest replaces the need for arguments
+Replaces the need for using arguments to access functions arguments. It allows you to get to an array representing "The rest of parameters".
+
 ```javascript
 ```
-### TODO from here
+
+### TODO from here -><-
 
 ### Spread parameters values
 
@@ -225,7 +236,7 @@ let highest = Math.max(...arr);
 console.log(arr); // 
 console.log(highest);
 ```
-[spread operator](http://www.es6fiddle.net/ibt9lps8/)
+[Ej1: spread operator](http://www.es6fiddle.net/ibt9lps8/)
 
 ### spread operator: (...) as parameters
 ```javascript
@@ -234,7 +245,7 @@ function restParameters(param, ...params) {
 }
 console.log(restParameters('a', 'b', 'c')); // ['b', 'c']
 ```
-[spread operator as parameter](http://www.es6fiddle.net/ibnp05oa/)
+[Ej1: spread operator as parameter](http://www.es6fiddle.net/ibnp05oa/)
 
 
 ### spread operator: (...) to turn strings into Arrays
@@ -250,7 +261,7 @@ let name = 'Leo';
 let tpl = `I'm: ${person.name} ${name}`; // we are using  with `back-ticks` or `grave-accent`
 console.log(tpl);
 ```
-[template literal](http://www.es6fiddle.net/ibnoh9mz/)
+[Ej1: template literal](http://www.es6fiddle.net/ibnoh9mz/)
 
 ### for...of
 Strings are iterable, which means that you can use for-of to iterate over their characters
@@ -259,9 +270,9 @@ for (let index of 'Jon Doe') {
     console.log(index);
 }
 ```
-[ej1-for...of](http://www.es6fiddle.net/ibnq4vte/)
-[ej2-for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
-[ej3-for..of:loop throw Array]
+[Ej1: for...of](http://www.es6fiddle.net/ibnq4vte/)
+[Ej2: for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
+[Ej3: for..of:loop throw Array]
 
 
 
@@ -281,7 +292,7 @@ console.log(typeof wrap);
 console.log(wrap instanceof Symbol)
 console.log('symbol2 symbol: ' + String(symbol2) );
 ```
-[Symbol](http://www.es6fiddle.net/ibnsu6sd/)
+[Ej1: Symbol](http://www.es6fiddle.net/ibnsu6sd/)
 
 
 ----
@@ -309,4 +320,5 @@ Looking for   | Go to
 ------------- | -------------
 exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
 UnderstandingES6        | [Nicholas C. Zakas - Book](https://leanpub.com/understandinges6/read)
+
 
