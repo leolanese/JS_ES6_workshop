@@ -58,7 +58,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 03. Block-level scope
 04. Classes
 05. Modules
-06. Default parameters
+06. New utility methods for Strings and Arrays
 07. Destructuring
 08. Generators
 09. Map
@@ -142,7 +142,133 @@ console.log( diag(4, 3) ); // 5
 [NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
 
 ---
+## 05. New utility methods for Strings and Arrays
+###
 
+### .fill()
+```javascript
+console.log(
+	['a', 'b', 'c'].fill("")
+);
+[fill](http://www.es6fiddle.net/ibt922uk/)
+```
+
+###  .find()
+```javascript
+console.log( [1, 2, 3].find(x => x == 3) );
+```
+[find](http://www.es6fiddle.net/ibt98kd2/)
+
+### .findIndex()
+```javascript
+[6, 8, -5].findIndex(x => x < 0)
+```
+[findIndex](http://www.es6fiddle.net/ibt9a6nh/)
+
+### .startsWith()
+```javascript
+var str = 'Hello World!';
+console.log(str.startsWith('Hello')); // True
+```
+[startsWith](http://www.es6fiddle.net/ibt9bihb/)
+
+### .endsWith()
+```javascript
+var str = 'Hello World!';
+console.log(str.endsWith('Hello')); // False
+```
+[endsWith](http://www.es6fiddle.net/ibt9dddr/)
+
+### .includes()
+```javascript
+var str = 'Hello World!';
+console.log(str.includes(' ')); // True
+console.log( 'JS '.repeat(3) ); // JS JS JS
+```
+[includes](http://www.es6fiddle.net/ibt9ef15/)
+
+### Computed property keys
+```javascript
+let o1 = 'Jon';
+let o2 = {[o1]: false,
+          ['D'+'o'+'e']: null
+};
+console.log(JSON.stringify(o2));
+```
+[Computed property keys](http://www.es6fiddle.net/ibnp05oa/)
+
+### spread operator: (...) 
+```javascript
+let arr = [-1, 7, 2, null, -0, +0, 10, 21];
+let highest = Math.max(...arr);
+console.log(arr); // 
+console.log(highest);
+```
+[spread operator](http://www.es6fiddle.net/ibt9lps8/)
+
+### spread operator: (...) as parameters
+```javascript
+function restParameters(param, ...params) {
+  return params;
+}
+console.log(restParameters('a', 'b', 'c')); // ['b', 'c']
+```
+[spread operator as parameter](http://www.es6fiddle.net/ibnp05oa/)
+
+
+### spread operator: (...) to turn strings into Arrays
+```javascript
+let chars = [...'Jon' + 'Doe'];
+console.log(chars); // ["J", "o", "n", "D", "o", "e"]
+```
+
+### template literal
+```javascript
+let person = { name: 'Mr.' };
+let name = 'Leo';
+let tpl = `I'm: ${person.name} ${name}`; // we are using  with `back-ticks` or `grave-accent`
+console.log(tpl);
+```
+[template literal](http://www.es6fiddle.net/ibnoh9mz/)
+
+### for...of
+Strings are iterable, which means that you can use for-of to iterate over their characters
+```javascript
+for (let index of 'Jon Doe') {
+    console.log(index);
+}
+```
+[ej1-for...of](http://www.es6fiddle.net/ibnq4vte/)
+[ej2-for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
+[ej3-for..of:loop throw Array]
+
+### Default parameter values
+```javascript
+function findClosestShape(x=0, y=0) {
+  // ...
+}
+```
+
+### Symbol()
+A new primitive type: Symbol()
+They are tokens that serve as unique IDs.
+This key avoid accidentally clash with any other property key:
+```javascript
+let symbol1 = Symbol();
+let symbol2 = Symbol();
+
+console.log(typeof symbol1);
+console.log( Object.is(symbol1,symbol2) );
+
+let wrap = Object(symbol2);
+console.log(typeof wrap);
+console.log(wrap instanceof Symbol)
+console.log('symbol2 symbol: ' + String(symbol2) );
+```
+[Symbol](http://www.es6fiddle.net/ibnsu6sd/)
+
+
+----
 
 # 5- My favourites ES6 playgrounds and Resources:
 
