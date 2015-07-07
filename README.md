@@ -13,9 +13,9 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 Further information:
 Looking for   | Go to
 ------------- | -------------
-Code          | [View](https://www.google.com) 
-Workshop      | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
-Char          | [LeoLanese Twitter](https://twitter.com/leolaneseltd) 
+Typescriptlang          | [View](https://www.google.com) 
+Typescriptlang          | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+Typescriptlang          |[LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
 Topics:
