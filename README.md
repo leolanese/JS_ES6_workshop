@@ -135,8 +135,63 @@ import { square, diag } from ‘src/lib';
 console.log( square(11) ); // 121
 console.log( diag(4, 3) ); // 5
 ```
-
 [Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
+
+
+06. 
+
+07.
+
+08.
+
+09.
+
+10. Promises
+The Promise object is used for deferred and asynchronous computations. 
+
+> A Promise represents an operation that hasn't completed yet, but is expected to in the future.
+
+A Promise is in one of these states:
+
+1.1 Pending: initial state, not fulfilled or rejected.
+1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
+1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
+
+
+A pending promise can become either fulfilled with a value, or rejected with a reason (error).
+As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.
+
+![alt text](https://mdn.mozillademos.org/files/8633/promises.png "EcmaScript6")
+Source: developer.mozilla.org
+
+```javascript
+// ES6 native Promise pattern
+// Promise Constructor
+var promise = new Promise(function(resolve, reject) {
+  if(true) {
+    resolve("worked!");  
+  } else {
+    reject("didnt work");
+  }
+
+});
+
+// ES6 promise instance
+promise
+  .then(function(result){
+    console.log(result);
+  }, function(error){
+    console.log(error);
+  });
+```  
+[Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
+
+11.
+
+12.
+
+13.
+
 
 ---
 ## 05. New utility methods for Strings and Arrays
@@ -196,6 +251,10 @@ console.log(arr1);
 console.log(arr2);
 ```
 [Ej1: Array.of](http://www.es6fiddle.net/ibtg9a0r/)
+
+
+### Function.name
+
 
 ### Computed property keys
 ```javascript
