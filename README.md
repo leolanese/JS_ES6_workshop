@@ -152,10 +152,12 @@ The Promise object is used for deferred and asynchronous computations.
 > A Promise represents an operation that hasn't completed yet, but is expected to in the future.
 
 A Promise is in one of these states:
-
 1.1 Pending: initial state, not fulfilled or rejected.
 1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
 1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
+
+
+> ES6 standardise promises and remove the external dependencies currently required to use promises.
 
 
 A pending promise can become either fulfilled with a value, or rejected with a reason (error).
@@ -253,7 +255,26 @@ console.log(arr2);
 [Ej1: Array.of](http://www.es6fiddle.net/ibtg9a0r/)
 
 
-### Function.name
+### Object.is() 
+> == and === both Operators are comparing same things, but == allows coercion and === disallows coercion, making === faster and more accurate.
+
+Following best practices:
+*Avoid == potential coerce errors 
+*Use === operator and also make it faster or Object.is()
+```javascript
+console.log(1 == "1"); // true
+console.log(1 === "1"); // false
+Object.is(1,"1"); // false
+
+console.log(NaN == NaN);
+console.log(NaN === NaN); // false
+Object.is(NaN,NaN); // true
+
+console.log('' == 0);  // true
+console.log('' === 0);  // false
+console.log(Object.is('',0); // false
+// doesn’t work on IE11
+```
 
 
 ### Computed property keys
@@ -353,6 +374,19 @@ console.log('symbol2 symbol: ' + String(symbol2) );
 ```
 [Ej1: Symbol](http://www.es6fiddle.net/ibnsu6sd/)
 
+
+### computed property keys
+You can specify the key of a property via an expression, by putting it in square brackets. In the following object literal, we use a computed property key to make the value of MY_KEY the key of a property.
+```javascript
+const _id = Symbol(); // generate Unique token and cannot be changed
+let obj = {
+    [_id]() { // specify the key of a property via an expression
+        return 'ID007';
+    }
+};
+console.log( obj[_id]() ); // ID007
+```
+[Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
 ----
 
