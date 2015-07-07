@@ -150,8 +150,8 @@ console.log( diag(4, 3) ); // 5
 console.log(
 	['a', 'b', 'c'].fill("")
 );
-[fill](http://www.es6fiddle.net/ibt922uk/)
 ```
+[fill](http://www.es6fiddle.net/ibt922uk/)
 
 ###  .find()
 ```javascript
@@ -309,9 +309,3 @@ Looking for   | Go to
 exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
 UnderstandingES6        | [Nicholas C. Zakas - Book](https://leanpub.com/understandinges6/read)
 
-
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
