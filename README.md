@@ -30,11 +30,11 @@ Topics:
 ----
 # 1- What is ES6?: 
 
-## Goal: Be a better language
-
 ### "ES6 will change the way you write JS code."
 To tell you the true, when I read this quote it’s scared me a little bit, thinking old code old knowledge could go to the bin.
 Reality check: **ES6 is an enhancement of ES5.** ES6 brings new features, solve few problems and it can be partially or complete incorporated to our code and make things easy to understand.
+
+> ES6 Goal: To be a better language
 
 ### Why we want to learn ES6?
 We are developers, we are progressive. **We want to learn the latest things so we can build the best applications possible.**
