@@ -53,24 +53,36 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ---
 # 1- Key Features in ES6:
 
-01. Scope (let and const)
+01. Block Scope
 02. Arrow functions
 03. Block-level scope
 04. Classes
-05. Constants
+05. Modules
 06. Default parameters
 07. Destructuring
 08. Generators
 09. Map
-10. Modules
-11. Promises
-12. Rest parameters
-13. Set
-14. Template Strings
+10. Promises
+11. Rest parameters
+12. Set
+13. Template Strings
 
-## 01. Scope
+## 01. Block Scope: let and const
 ### let()
-Variable declared using let will only be available in the current block instead of the entire function when using var.
+Up to ES6 variables are always function scoped: So, no matter where you declare your variable, these are going to be hoisted on the top of the scope.
+
+Variable declared using let will only be available in the ‘current block’ instead of the ‘entire function’ when using var.
+The let keyword allows you to define variables within the scope of the block (block scoping).
+
+>  Don't replace let for var
+
+### EJ:
+#### let w/function:
+[let w/function](http://www.es6fiddle.net/ibt75xzh/)
+
+#### let w/looping:
+[let w/looping](http://www.es6fiddle.net/ibt7tkvh/)
+
 
 ### const()
 We will be able to create constants and make sure its value won’t be changed
@@ -78,26 +90,60 @@ We will be able to create constants and make sure its value won’t be changed
 
 
 ---
-## 02.
-### 
+## 02. Arrow functions: =>
+Providing a work around to: ‘that = this’ or ‘bind()’
+With a more compact version of an ‘anonymous function syntax’.
+
+Ej1
+[Example](http://www.es6fiddle.net/ibs23tom/)
+
+Ej2: ES5 Vs. ES6
+[ES5](http://jsfiddle.net/leolanese/uz9x15x7/)
+[ES6](http://www.es6fiddle.net/ibt3woe1/)
+
 
 ---
-## 3-  
-### 
+## 03. Block-level scope: {}
+### This creates a Temporal Dead Zone
 
 ---
-## 4-
-###
+## 4- Classes and inheritance: class, extends, 
+JS doesn't have classes, it does something that’s called prototypes
+and while JS will still have prototypes, they’re going to add a little piece of what’s called syntactic sugar, or in other words, a simpler way of writing something on a different way.
+
+>  Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
+
+Ej1:
+[Classes and Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
 
 
-> 
+---
+## 05 Modules: 
+Modules are stored in files. 
+The goal for ECMAScript 6 modules was to create a format that both users of CommonJS and of AMD are happy with. We can do similar things that using AMD CommnJS:
 
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+//------ lib.js ------
+export const sqrt = Math.sqrt;
+
+export function square(x) {
+    return x * x;
+}
+export function diag(x, y) {
+    return sqrt(square(x) + square(y));
+}
+
+//------ main.js ------
+import { square, diag } from ‘src/lib';
+console.log( square(11) ); // 121
+console.log( diag(4, 3) ); // 5
 ```
 
+[NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
+
 ---
+
+
 # 5- My favourites ES6 playgrounds and Resources:
 
 ## ES6 Features
@@ -121,3 +167,10 @@ Looking for   | Go to
 ------------- | -------------
 exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
 UnderstandingES6        | [Nicholas C. Zakas - Book](https://leanpub.com/understandinges6/read)
+
+
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
