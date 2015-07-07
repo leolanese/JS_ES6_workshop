@@ -11,11 +11,12 @@ ECMA Script 6 is already here, and more and more of the production libraries and
 
 
 Further information:
+
 Looking for   | Go to
 ------------- | -------------
-Typescriptlang          | [View](https://www.google.com) 
-Typescriptlang          | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
-Typescriptlang          |[LeoLanese Twitter](https://twitter.com/leolaneseltd) 
+Sources          | [View](https://www.google.com) 
+GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
 Topics:
