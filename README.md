@@ -49,26 +49,41 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ---
 # 1- Key Features in ES6:
 
-01. Arrow functions
-02. Block-level scope
-03. Classes
-04. Constants
-05. Default parameters
-06. Destructuring
-07. Generators
-08. Map
-09. Modules
-10. Promises
-11. Rest parameters
-12. Set
-13. Template Strings
+01. Scope (let and const)
+02. Arrow functions
+03. Block-level scope
+04. Classes
+05. Constants
+06. Default parameters
+07. Destructuring
+08. Generators
+09. Map
+10. Modules
+11. Promises
+12. Rest parameters
+13. Set
+14. Template Strings
+
+## 01. Scope
+### let()
+Variable declared using let will only be available in the current block instead of the entire function when using var.
+
+### const()
+We will be able to create constants and make sure its value won’t be changed
+[Example](http://www.es6fiddle.net/ibs2z9yg/)
 
 
 ---
-# 3-  
+## 02.
+### 
 
 ---
-# 4-
+## 3-  
+### 
+
+---
+## 4-
+###
 
 
 > 
