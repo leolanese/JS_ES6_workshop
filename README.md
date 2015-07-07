@@ -24,8 +24,7 @@ Topics:
 1. What is ES6? 
 2. Key Features in ES6
 3. Should I Use ES6 Now or Wait?. How to start using ES6 now?
-4. 'Hello ES6 World'?
-5. What next?
+4. What next?
 
 ----
 # 1- What is ES6?: 
@@ -388,9 +387,13 @@ console.log( obj[_id]() ); // ID007
 ```
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
-----
+---
+# 3. Should I Use ES6 Now or Wait?. How to start using ES6 now?
 
-# 5- My favourites ES6 playgrounds and Resources:
+
+
+---
+# 4- My favourites ES6 playgrounds and Resources:
 
 ## ES6 Features
 Looking for   | Go to
