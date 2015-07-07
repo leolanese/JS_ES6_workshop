@@ -197,7 +197,27 @@ console.log(JSON.stringify(o2));
 ```
 [Computed property keys](http://www.es6fiddle.net/ibnp05oa/)
 
-### spread operator: (...) 
+### Default parameter values: =
+```javascript
+function f(x, y=12) { 
+  // y is 12 if not passed (or passed as undefined) 
+  return x + y; 
+} 
+console.log( f(3) == 15; )
+```
+[Default parameter values](http://www.es6fiddle.net/ibtafirh/)
+
+
+### Rest parameters values: ...
+Rest replaces the need for arguments
+```javascript
+```
+### TODO from here
+
+### Spread parameters values
+
+
+### spread operator:
 ```javascript
 let arr = [-1, 7, 2, null, -0, +0, 10, 21];
 let highest = Math.max(...arr);
@@ -242,12 +262,7 @@ for (let index of 'Jon Doe') {
 [ej2-for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
 [ej3-for..of:loop throw Array]
 
-### Default parameter values
-```javascript
-function findClosestShape(x=0, y=0) {
-  // ...
-}
-```
+
 
 ### Symbol()
 A new primitive type: Symbol()
