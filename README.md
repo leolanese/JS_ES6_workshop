@@ -391,6 +391,10 @@ console.log( obj[_id]() ); // ID007
 # 3. Should I Use ES6 Now or Wait?. How to start using ES6 now?
 
 
+##Gulp, NodeJS and ES6:
+[gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
+
+
 
 ---
 # 4- My favourites ES6 playgrounds and Resources:
