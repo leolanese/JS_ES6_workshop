@@ -37,7 +37,9 @@ Reality check: **ES6 is an enhancement of ES5.** ES6 brings new features, solve 
 
 ### Why we want to learn ES6?
 We are developers, we are progressive. **We want to learn the latest things so we can build the best applications possible.**
-We will be ready, our product will be future proof and as a developer we will be more marketable as a coder in the industry, this will positioning an step ahead and we will be ready for AngularJS 2.
+We will be ready, our product will be future proof and as a developer we will be more marketable as a coder in the industry.
+
+A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2
 
 ### AngularJS 2:
 **AngularJS2 it’s going to be a big deal.**
