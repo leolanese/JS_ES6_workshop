@@ -141,7 +141,7 @@ console.log( diag(4, 3) ); // 5
 
 07.
 
-08.
+08.a
 
 09.
 
@@ -195,44 +195,42 @@ promise
 
 
 ---
-## 05. New utility methods for Strings and Arrays
-###
+## 05. New utility methods for Strings, Arrays and additions to the Number and Object object
+### String.prototype & Array.prototype
 
-### .fill()
+### Array.prototype.fill()
 ```javascript
-console.log(
-	['a', 'b', 'c'].fill("")
-);
+console.log( ['a', 'b', 'c'].fill("") ); // Array [ "", "", "" ]
 ```
 [Ej1: fill](http://www.es6fiddle.net/ibt922uk/)
 
-###  .find()
+###  Array.prototype.find()
 ```javascript
 console.log( [1, 2, 3].find(x => x == 3) );
 ```
 [Ej1: find](http://www.es6fiddle.net/ibt98kd2/)
 
-### .findIndex()
+### Array.prototype..findIndex()
 ```javascript
 [6, 8, -5].findIndex(x => x < 0)
 ```
 [Ej1: findIndex](http://www.es6fiddle.net/ibt9a6nh/)
 
-### .startsWith()
+### String.prototype.startsWith()
 ```javascript
 var str = 'Hello World!';
 console.log(str.startsWith('Hello')); // True
 ```
 [Ej1: startsWith](http://www.es6fiddle.net/ibt9bihb/)
 
-### .endsWith()
+### String.prototype.endsWith()
 ```javascript
 var str = 'Hello World!';
 console.log(str.endsWith('Hello')); // False
 ```
 [Ej1: endsWith](http://www.es6fiddle.net/ibt9dddr/)
 
-### .includes()
+### String.prototype.includes()
 ```javascript
 var str = 'Hello World!';
 console.log(str.includes(' ')); // True
@@ -242,10 +240,9 @@ console.log( 'JS '.repeat(3) ); // JS JS JS
 
 ### Array.of()
 ```javascript
-var arr = new Array([1,2,3])
-var arr1 = [1, 2, 3];
-
-let arr2 = Array.of(1, 2, 3);
+var arr = new Array([1,2,3]); // ES4.1
+var arr1 = [1, 2, 3]; // ES4.1
+let arr2 = Array.of(1, 2, 3); // ES6
 
 console.log(arr);
 console.log(arr1);
@@ -254,7 +251,21 @@ console.log(arr2);
 [Ej1: Array.of](http://www.es6fiddle.net/ibtg9a0r/)
 
 
-### Object.is() 
+### Additions to the Number Object: isNaN
+```javascript
+Number.isNaN(0 / 0);   // true
+Number.isNaN(NaN);        // true
+Number.isNaN(undefined);  // false
+Number.isNaN({});         // false
+```
+
+### Additions to the Number Object: isFinite
+```javascript
+Number.isFinite(NaN);       // false
+Number.isFinite(0);  
+```
+
+### Additions to the Object object: Object.is() 
 > == and === both Operators are comparing same things, but == allows coercion and === disallows coercion, making === faster and more accurate.
 
 Following best practices:
@@ -275,6 +286,14 @@ console.log(Object.is('',0); // false
 // doesn’t work on IE11
 ```
 
+### Additions to the Object object: Object.assign()
+For merging objects we will have the function 
+```javascript
+var obj = { a: 1 };
+var copy = Object.assign({}, obj); // Object.assign(target, source_1, ..., source_n)
+console.log(copy); // { a: 1 }
+
+```
 
 ### Computed property keys
 ```javascript
