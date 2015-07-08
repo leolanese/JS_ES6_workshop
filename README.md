@@ -424,6 +424,7 @@ Looking for   | Go to
 ES6Features  | [ES6](https://github.com/lukehoban/es6features)
 ECMAScript 6 compatibility Table | [Can I use ES6](http://kangax.github.io/compat-table/es6/)
 Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
+Harmony Specification | [ECMA-262 Edition-6](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts)
 
 
 ## Further information:
@@ -439,5 +440,6 @@ Looking for   | Go to
 ------------- | -------------
 exploring-es6          | [Axel Rauschmayer - Book](https://leanpub.com/exploring-es6/read)
 UnderstandingES6        | [Nicholas C. Zakas - Book](https://leanpub.com/understandinges6/read)
+ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 
 
