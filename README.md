@@ -2,7 +2,7 @@
 ## The road to ECMAScript 6: New solutions for old JS problems
 
 
-``ECMA Script 6 is already here``, and more and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, we can start using ES6 now with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
+``ECMA Script 6 is already here``, and more and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, ``we can start using ES6 now`` with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
 
 
 ## Goal of the Workshop:
@@ -33,7 +33,7 @@ Topics:
 
 ### "ES6 will change the way you write JS code."
 To tell you the true, when I read this quote it’s scared me a little bit, thinking old code old knowledge could go to the bin.
-Reality check: **ES6 is an enhancement of ES5.** ES6 brings new features, solve few problems and it can be partially or complete incorporated to our code and make things easy to understand.
+Reality check: ``**ES6 is an enhancement of ES5.** ES6 brings new features, solve few problems and it can be partially or complete incorporated to our code`` and make things easy to understand.
 
 > ES6 Goal: To be a better language
 
@@ -46,14 +46,14 @@ A large number of the top libraries that are building these days are all going t
 ![alt text](http://svgporn.com/angular.svg "EcmaScript6")
 ### AngularJS 2:
 **AngularJS2 it’s going to be a big deal.**
-If you worry to get ready to AngularJS2, about being ready from a knowledge standpoint there are some new things that you should know about.
+``If you worry to get ready to AngularJS2, about being ready from a knowledge standpoint there are some new things that you should know about.``
 
 ### What can we do right now in order to be up to date when AngularJS 2 comes?
 If you want to be ready for AJS2 we can start learning ES6, and **we’ll be ahead of the game**.
 We can be ready and prepared focusing on one thing in particular: ES6
 
 ### Do I need to migrate my javaScript code to ECMAScript 6?
-**There is no need**: ECMAScript 6 is a superset of ECMAScript 5. Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
+``**There is no need**: ECMAScript 6 is a superset of ECMAScript 5. ``Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
 
 ---
 # 2- Key Features in ES6:
@@ -76,7 +76,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 
 ## 01. Block Scope: let and const
 ### let()
-Up to ES6 variables are always function scoped: So, no matter where you declare your variable, these are going to be hoisted on the top of the scope.
+Up to ES6 variables are always function scoped: So, ``no matter where you declare your variable, these are going to be hoisted on the top of the scope.``
 
 Variable declared using let will only be available in the ‘current block’ instead of the ‘entire function’ when using var.
 The let keyword allows you to define variables within the scope of the block (block scoping).
@@ -153,11 +153,11 @@ console.log( diag(4, 3) ); // 5
 09.
 
 10. Promises
-The Promise object is used for deferred and asynchronous computations. 
+The Promise object is used for deferred and asynchronous computations (the action of mathematical calculation). 
 
 > A Promise represents an operation that hasn't completed yet, but is expected to in the future.
 
-A Promise is in one of these states:
+1. A Promise can have one of these states:
 1.1 Pending: initial state, not fulfilled or rejected.
 1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
 1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
@@ -166,14 +166,14 @@ A Promise is in one of these states:
 > ES6 standardise promises and remove the external dependencies currently required to use promises.
 
 
-A pending promise can become either fulfilled with a value, or rejected with a reason (error).
-As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.
+``A pending promise can become either fulfilled with a value, or rejected with a reason (error).
+As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.``
 
 ![alt text](https://mdn.mozillademos.org/files/8633/promises.png "EcmaScript6")
 Source: developer.mozilla.org
 
+### ES6 native Promise pattern
 ```javascript
-// ES6 native Promise pattern
 // Promise Constructor
 var promise = new Promise(function(resolve, reject) {
   if(true) {
@@ -203,7 +203,7 @@ promise
 
 ---
 ## 05. New utility methods for Strings, Arrays and additions to the Number and Object object
-### String.prototype & Array.prototype
+### String.prototype and Array.prototype
 
 ### Array.prototype.fill()
 ```javascript
@@ -415,11 +415,21 @@ console.log( obj[_id]() ); // ID007
 
 ---
 # 3-  Should I Use ES6 Now or Wait?. How to start using ES6 now?
-
 ![alt text](http://svgporn.com/babel.svg "Babel")
 
+it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers" that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
-##Gulp, NodeJS and ES6:
+## Transpilers: using Babel
+[Babel Playgroud](https://babeljs.io/repl/) 
+
+-[todo: incluir example]-
+
+## Transpilers: using Google Traceur 
+[Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
+-[todo: incluir example]-
+
+## Automatic Transpilers: using Gulp, Babel, NodeJS: Using ES6
+
 [gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
 
 
