@@ -2,7 +2,7 @@
 ## The road to ECMAScript 6: New solutions for old JS problems
 
 
-> ``ECMA Script 6 has been finally released under [Standard ECMA-262, 6th edition (June 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm)``, and is here to stay.
+> ECMA Script 6 Edition has been finally released under [Standard ECMA-262, 6th edition (June 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm), and is here to stay.
 
 More and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, ``we can start using ES6 now`` with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
 
