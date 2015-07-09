@@ -41,6 +41,7 @@ We will be ready, our product will be future proof and as a developer we will be
 
 A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2
 
+![alt text](http://svgporn.com/angular.svg "EcmaScript6")
 ### AngularJS 2:
 **AngularJS2 it’s going to be a big deal.**
 If you worry to get ready to AngularJS2, about being ready from a knowledge standpoint there are some new things that you should know about.
@@ -410,6 +411,8 @@ console.log( obj[_id]() ); // ID007
 
 ---
 # 3. Should I Use ES6 Now or Wait?. How to start using ES6 now?
+
+![alt text](http://svgporn.com/babel.svg "Babel")
 
 
 ##Gulp, NodeJS and ES6:
