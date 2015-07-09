@@ -2,7 +2,9 @@
 ## The road to ECMAScript 6: New solutions for old JS problems
 
 
-``ECMA Script 6 is already here``, and more and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, ``we can start using ES6 now`` with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
+> ``ECMA Script 6 has been finally released under [Standard ECMA-262, 6th edition (June 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm)``, and is here to stay.
+
+More and more of the production libraries and frameworks we use to create our applications are going to be written using this new version of JavaScript. Instead of waiting on the sidelines, ``we can start using ES6 now`` with the help of transpilers/shim, and enjoy many of the benefits without worrying about browser compatibility.
 
 
 ## Goal of the Workshop:
@@ -88,11 +90,47 @@ The let keyword allows you to define variables within the scope of the block (bl
 [Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
 #### let w/looping:
-[Ej2: let w/looping](http://www.es6fiddle.net/ibt7tkvh/)
+// error on j2
+```javascript
+for(var v = 0; v < 10; v++) {
+    // 'v' is only available within the for block
+   console.log(v);
+   //var v2 = v;
+}
+
+for(let j = 0; j < 10; j++) {
+    // 'j' is only available within the for block
+   console.log(j);
+   let j2 = j;
+}
+console.log("var -->", v); 
+console.log("let -->", j); // error j is not defined because of let
+```
+[Ej2: let w/looping](http://www.es6fiddle.net/ibwh8qpk/)
+
+```javascript
+for (let l = 0; l < 3; l++) {
+console.log('loop:', l);
+}
+console.log('after loop:', typeof l);
+
+for (var v = 0; v < 3; v++) {
+console.log('loop:', v);
+}
+console.log('after loop:', typeof v);
+```
+[Ej3: let w/looping](http://www.es6fiddle.net/ibwh5v5x/)
 
 
 ### const()
 We will be able to create constants and make sure its value won’t be changed
+```javascript
+const no = [{'here':'there'}, {'owesome':'ES6'}];
+console.log(no);
+
+// var no = [{'no':'posible'}];
+console.log(no);
+```
 [Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
 
@@ -354,6 +392,7 @@ console.log(JSON.stringify(o2));
 [Ej1: Computed property keys](http://www.es6fiddle.net/ibnp05oa/)
 
 ### Default parameter values: =
+We can now set defaults when defining arguments
 ```javascript
 function f(x, y=10, z=20) { 
   // y is 10 and z is 20 if not passed (or passed as undefined) 
@@ -370,9 +409,20 @@ console.log( f(3) == 33 )
 Replaces the need for using arguments to access functions arguments. It allows you to get to an array representing "The rest of parameters".
 
 ```javascript
-```
+function multiply(multiplier, ...theArgs) {  
+  console.log(multiplier + ' - '+ theArgs); // 2 - 1,2,3  
+  
+  return theArgs.map(function (element) {
+    console.log(element); // 1,2,3  
+    return multiplier * element;
+  });
+  
+}
 
-### TODO from here -><-
+var arr = multiply(2, 1, 2, 3);  
+console.log(arr); // [2, 4, 6]  
+```
+[Ej1: Rest using map](http://www.es6fiddle.net/ibwgv30g/)
 
 ### Spread parameters values
 
