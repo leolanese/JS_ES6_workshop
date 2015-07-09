@@ -100,12 +100,53 @@ We will be able to create constants and make sure its value won’t be changed
 ## 02. Arrow functions: =>
 1.1 Providing a work around to: ‘that = this’ or ‘bind()’
 1.2 With a more compact version of an ‘anonymous function syntax’.
+```javascript
+setTimeout(() => { console.log('Hello'); }, 2000);  
+```
+[Ej1: Example](http://www.es6fiddle.net/ibw4crgq/)
+```javascript
+let square = num => num * num;
+console.log( square(10) );
+```
+[Ej2: Example](http://www.es6fiddle.net/ibtfr5fk/)
 
-[Ej1: Example](http://www.es6fiddle.net/ibtfr5fk/)
 
-[Ej2: ES5 Vs. ES6: ES5](http://jsfiddle.net/leolanese/uz9x15x7/)
+```javascript
+function Car() {
+    
+  var that = this; //locally assign this that can be closed over
+    
+  that.speed = 0;
 
-[Ej2: ES5 Vs. ES6: ES6](http://www.es6fiddle.net/ibtfwm70/)
+  setInterval(function goFaster() {
+    //this has a different scope, but we can use the self variable to reference the parent "this"
+    that.speed += 5;
+      console.log('now going: ' + that.speed);
+  }, 2000);
+    
+}
+
+var car = new Car();
+console.warn(car)
+```
+[Ej3: ES5 Vs. ES6: ES5 version](http://jsfiddle.net/leolanese/uz9x15x7/)
+Vs.
+```javascript
+function Car() { //Note, we could use the new Class feature in ES6 instead
+
+  this.speed = 0;
+
+  setInterval(() => {
+    this.speed += 5; //this is from Car
+    console.log('now going: ' + this.speed);
+  }, 1000);
+
+}
+
+let car = new Car();
+console.log(car)
+```
+[Ej3: ES5 Vs. ES6: ES6 version](http://www.es6fiddle.net/ibtfwm70/)
 
 
 ---
@@ -314,13 +355,15 @@ console.log(JSON.stringify(o2));
 
 ### Default parameter values: =
 ```javascript
-function f(x, y=12) { 
-  // y is 12 if not passed (or passed as undefined) 
-  return x + y; 
+function f(x, y=10, z=20) { 
+  // y is 10 and z is 20 if not passed (or passed as undefined) 
+  console.log(x , y , z); // 3 10 20
+  console.log(x + y + z); // 33
+  return x + y + z; 
 } 
-console.log( f(3) == 15; )
+console.log( f(3) == 33 )
 ```
-[Ej1: Default parameter values](http://www.es6fiddle.net/ibtafirh/)
+[Ej1: Default parameter values](http://www.es6fiddle.net/ibw4x9n8/)
 
 
 ### Rest parameters values: ...
@@ -412,6 +455,15 @@ let obj = {
 console.log( obj[_id]() ); // ID007
 ```
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
+
+### Destructuring
+
+### Generators
+This  ideal for creating functions that should be exited and continued later.
+
+> Generator objects are both iterator and iterable.
+
+### Rest parameters
 
 ---
 # 3-  Should I Use ES6 Now or Wait?. How to start using ES6 now?
