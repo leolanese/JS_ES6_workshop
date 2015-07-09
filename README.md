@@ -58,7 +58,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ---
 # 2- Key Features in ES6:
 
-![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "EcmaScript6")
+![alt text](http://svgporn.com/javascript.svg "ES6 JS")
 
 01. Block Scope
 02. Arrow functions
