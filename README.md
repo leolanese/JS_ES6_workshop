@@ -85,7 +85,6 @@ The let keyword allows you to define variables within the scope of the block (bl
 
 >  Don't replace let for var
 
-
 #### let w/function:
 [Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
