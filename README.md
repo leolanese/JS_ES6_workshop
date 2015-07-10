@@ -21,7 +21,7 @@ GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git)
 Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
-Topics:
+## Topics:
 
 1. What is ES6? 
 2. Key Features in ES6
