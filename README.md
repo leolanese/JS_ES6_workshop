@@ -191,9 +191,10 @@ console.log(car)
 ### This creates a Temporal Dead Zone
 
 ---
-## 4- Classes and inheritance: class, extends, etc
+## 4- Classes and inheritance: class, extends, setters, getters, etc
 > Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
 
+### classes, constructor, getters, and setters
 ```javascript
 class Foo {
   constructor(p1, p2) {
@@ -221,6 +222,7 @@ console.log(hello.world);
 
 > JS doesn't have classes, it does something that’s called prototypes JS will still have prototypes ES6 add syntactic sugar code on top of this.
 
+### extends
 ```javascript
 class Car {
     constructor(x, y) {
