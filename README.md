@@ -191,12 +191,74 @@ console.log(car)
 ### This creates a Temporal Dead Zone
 
 ---
-## 4- Classes and inheritance: class, extends, 
-Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
+## 4- Classes and inheritance: class, extends, etc
+> Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
+
+```javascript
+class Foo {
+  constructor(p1, p2) {
+    this.p1 = p1;
+    this.p2 = p2;
+  }
+
+  get name() {
+    return this.p1 + " " + this.p2;
+  }
+
+  set name(name) {
+    var names = name.split(" ");
+
+    this.p1 = names[0];
+    this.p2 = names[1];
+  }
+}
+
+var hello = new Foo("Hello", "World!");
+hello.world = "Hello World!";
+console.log(hello.world);
+```
+[Ej1: ES6 Classes and Contructor](http://www.es6fiddle.net/ibyylfm7/)
 
 > JS doesn't have classes, it does something that’s called prototypes JS will still have prototypes ES6 add syntactic sugar code on top of this.
 
-[Ej1: Classes and Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
+```javascript
+class Car {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    toString() {
+        return '(${this.x}, ${this.y})';
+    }
+    static classMethod() {
+        return 'test';
+    }
+}
+
+// Point: Car class and Fiat: subclass
+class Fiat extends Car {
+    constructor(x, y, color) {
+        super(x, y);
+        this.color = color;
+    }
+    toString() {
+        return super.toString() + ' in ' + this.color;
+    }
+}
+
+console.log(typeof Car); // function :)
+let cp = new Fiat(10, 5, 'red'); // we can only invoke a class via new
+console.warn(cp); // function Fiat {x: 25, y: 8, color: "red"}
+console.log(cp instanceof Fiat); // true
+console.log(cp instanceof Car); // true
+
+// The prototype of a subclass is the superclass
+console.log( Object.getPrototypeOf( Car) ); // Car
+console.log( Object.getPrototypeOf( Fiat ).toString() ); //  means thats methods and properties are inherited function Car(x, y) {…}
+
+console.log( Fiat.classMethod() );
+```
+[Ej2: ES6 Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
 
 ---
 ## 05 Modules: 
