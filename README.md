@@ -25,7 +25,7 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 
 1. What is ES6? 
 2. Key Features in ES6
-3. Should I Use ES6 Now or Wait?. How to start using ES6 now?
+3. When can I start using ES6? 
 4. What next?
 
 ----
@@ -515,9 +515,10 @@ This  ideal for creating functions that should be exited and continued later.
 ### Rest parameters
 
 ---
-# 3-  Should I Use ES6 Now or Wait?. How to start using ES6 now?
+# 3-  When can I start using ES6? 
 ![alt text](http://leolanese.com/es6-5.png "transpilers")
 
+How to start using ES6 now?
 ```it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
 ## Transpilers: using Babel
