@@ -572,7 +572,7 @@ Please add this code before the </body> tag in order to use the traceur package:
   </body>
 </html>
 ```
->  Notice that this script tag is using "module" as its type instead of the usual "text/javascript": that's how bootstrap.js knows to compile the ES6 source into ES5 and insert the ES5 back in the page. When the page loads, it finds all of the <script type="module"> tags, compiles their contents down to vanilla Javascript and then has the browser evaluate it.
+Notice that this script tag is using "module" as its type instead of the usual "text/javascript": that's how bootstrap.js knows to compile the ES6 source into ES5 and insert the ES5 back in the page. When the page loads, it finds all of the ```<script type="module">``` tags, compiles their contents down to vanilla Javascript and then has the browser evaluate it.
 
 ### Try it out in the browser
 [Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
