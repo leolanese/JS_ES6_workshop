@@ -1,5 +1,5 @@
 # ES6 workshop
-## The road to ECMAScript 6: New solutions for old JS problems
+## The road to ECMAScript 6: "New solutions for old JS problems"
 
 
 > ECMA Script 6 Edition has been finally released under [Standard ECMA-262, 6th edition (June 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm), and is here to stay.
@@ -614,3 +614,6 @@ UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understand
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 
 
+---
+# 5- What's next?
+![alt text](http://brandonsteiner.com/wp-content/uploads/2014/12/whats-next.jpg "What's Next?")
