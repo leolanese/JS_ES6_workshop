@@ -617,4 +617,4 @@ ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 ---
 # 5- What's next?
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
-<small>http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg</small>
+<small>Source: lovemynokia.com</small>
