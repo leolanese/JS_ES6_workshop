@@ -524,17 +524,60 @@ This  ideal for creating functions that should be exited and continued later.
 ![alt text](http://svgporn.com/babel.svg "Babel")
 [Babel Playgroud](https://babeljs.io/repl/) 
 
--[......todo: incluir example]-
+-[......todo: incluir terminal examples TODO more example]-
 
 ## Transpilers: using Google Traceur 
 ![alt text](http://leolanese.com/tc.png "Google Traceur")
+
+Please add this code before the </body> tag in order to use the traceur package:
+```javascript
+//add this code before </body>
+<script type="module">
+    // write your code here
+</script>
+```
+
+### And add this code in the head section in order to use the experimentals 
+```javascript
+// optional: add this code inside <head></head>
+<script>
+    traceur.options.experimental = true;
+</script>
+```
+
+## Lets include the traceur.js and bootstrap.js
+```javascript
+<!DOCTYPE html>
+<html>
+  <head>
+  <script>
+    traceur.options.experimental = true;
+  </script>
+  </head>
+  <body>
+    <h1 id="message"></h1>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <script type="module">
+        (function() {
+          'use strict'
+          for (let i = 0; i < 3; i++) {
+            console.log('loop:', i); // 0,1,2
+          }
+          console.log('after loop:', typeof i); // after loop: "undefined"
+        })();
+    </script>
+    <h1>Testing traceur</h1>
+  </body>
+</html>
+```
+>  Notice that this script tag is using "module" as its type instead of the usual "text/javascript": that's how bootstrap.js knows to compile the ES6 source into ES5 and insert the ES5 back in the page. When the page loads, it finds all of the <script type="module"> tags, compiles their contents down to vanilla Javascript and then has the browser evaluate it.
+
+### Try it out in the browser
 [Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
 
--[.....todo: incluir example]-
 
-
-## Automatic Transpilers: using Gulp, Babel, NodeJS: Using ES6
-
+## Automatic Transpilers: Building Automatically using Gulp, Babel, NodeJS: Using ES6
 [gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
 
 
