@@ -35,7 +35,7 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 
 
 ## A litte ebit of History:
-History  | 
+History  |  Year
 ------------- | -------------
 ECMAScript 1:          | [1997](https://www.google.com)  
 ECMAScript 2:        | 1998
