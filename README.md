@@ -191,7 +191,9 @@ console.log(car)
 ### This creates a Temporal Dead Zone
 
 ---
-## 4- Classes and inheritance: class, extends, setters, getters, etc
+## 4- Classes and inheritance: class, extends, setters, getters, super, etc
+ES6 Classes are simplre sugar over the prototype-based OO Pattern. 
+
 > Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
 
 ### classes, constructor, getters, and setters
