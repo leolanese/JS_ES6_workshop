@@ -34,14 +34,18 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 ![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "EcmaScript6")
 
 
-## A litte ebit of History:
+## A litte bit of History:
 History  |  Year
 ------------- | -------------
-ECMAScript 1:          | [1997](https://www.google.com)  
+ECMAScript 1:        | 1997
 ECMAScript 2:        | 1998
 ECMAScript 3:        | 1999
 ECMAScript 4:        | Abandoned
-ECMAScript 5:        | 2015
+ECMAScript 5:        | 2009
+ECMAScript 5.1:      | 2011
+ECMAScript 6:        | 2015
+ECMAScript 7:        | Work in progress
+
 
 
 ### "ES6 will change the way you write JS code."
