@@ -138,8 +138,8 @@ console.log(1,2,3)
 [Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
 #### let w/looping:
-// error on j2
 ```javascript
+// error on j2
 for(var v = 0; v < 10; v++) {
     // 'v' is only available within the for block
    console.log(v);
