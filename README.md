@@ -128,6 +128,7 @@ console.log(1,2,3)
 ## Creating Arrays:
 ```javascript
 // ES6
+[todo ]
 
 ```
 
