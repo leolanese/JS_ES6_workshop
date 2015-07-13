@@ -189,6 +189,7 @@ var sayHello = function(msn, name){
     return msn + ' ' + name;
 };
 console.log(sayHello('Hi','there'));
+
 // ES6
 let sayHello = (msn, name) => {
     return msn + ' ' + name;
@@ -196,6 +197,14 @@ let sayHello = (msn, name) => {
 console.log(sayHello('Hi','there'));
 ```
 [Ej1: Arrow](http://www.es6fiddle.net/ic2fdnx2/)
+
+```javascript
+// ES6
+var sayHello = (msn, n) => msn + ' ' + n;
+console.log(sayHello('Hi','there'));
+```
+[Ej1 - short](http://www.es6fiddle.net/ic2g5hxj/)
+
 
 > Provide a work around to: ‘that = this’ or ‘bind()’, with a more compact version of an ‘anonymous function syntax’.
 
