@@ -33,6 +33,17 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 
 ![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "EcmaScript6")
 
+
+## A litte ebit of History:
+History  | 
+------------- | -------------
+ECMAScript 1:          | 1997 
+ECMAScript 2:        | 1998
+ECMAScript 3:        | 1999
+ECMAScript 4:        | Abandoned
+ECMAScript 5:        | 2015
+
+
 ### "ES6 will change the way you write JS code."
 To tell you the true, when I read this quote it’s scared me a little bit, thinking old code old knowledge could go to the bin.
 Reality check: ``**ES6 is an enhancement of ES5.** ES6 brings new features, solve few problems and it can be partially or complete incorporated to our code`` and make things easy to understand.
