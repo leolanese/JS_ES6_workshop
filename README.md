@@ -92,7 +92,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 13. Template Strings
 
 =======================================================================================================================
-## 01. Block Scope: let and const
+-- 01. Block Scope: let and const
 ### let()
 Up to ES6 variables are always function scoped: So, ``no matter where you declare your variable, these are going to be hoisted on the top of the scope.``
 
@@ -183,7 +183,7 @@ console.log(no);
 [Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
 =======================================================================================================================
-## 02. Arrow functions: =>
+-- 02. Arrow functions: =>
 ```javascript
 // ES5
 var sayHello = function(msn, name){
@@ -221,11 +221,11 @@ console.log( square(10) );
 
 
 =======================================================================================================================
-## 3- Block-level scope: {}
+-- 3- Block-level scope: {}
 ### This creates a Temporal Dead Zone
 
 =======================================================================================================================
-## 4- Classes and inheritance: class, extends, setters, getters, super, etc
+-- 4- Classes and inheritance: class, extends, setters, getters, super, etc
 ES6 Classes are simplre sugar over the prototype-based OO Pattern. 
 
 > Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
@@ -338,7 +338,7 @@ console.log(car)
 
 
 =======================================================================================================================
-## 05 Modules: 
+-- 05 Modules: 
 Modules are stored in files. 
 The goal for ECMAScript 6 modules is to create a format that both users of CommonJS and of AMD are happy with.
 
@@ -362,19 +362,19 @@ console.log( diag(4, 3) ); // 5
 
 
 =======================================================================================================================
-06. 
+-- 06. 
 
 =======================================================================================================================
-07.
+-- 07.
 
 =======================================================================================================================
-08.
+-- 08.
 
 =======================================================================================================================
-09.
+-- 09.
 
 =======================================================================================================================
-10. Promises
+-- 10. Promises
 The Promise object is used for deferred and asynchronous computations (the action of mathematical calculation). 
 
 > A Promise represents an operation that hasn't completed yet, but is expected to in the future.
@@ -417,13 +417,13 @@ promise
 [Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
 
 =======================================================================================================================
-11.
+-- 11.
 
 =======================================================================================================================
-12.
+-- 12.
 
 =======================================================================================================================
-13.
+-- 13.
 
 
 ----------------------------------------------------------------------------------------------------------------------
