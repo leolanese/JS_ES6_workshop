@@ -28,7 +28,7 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 3. When can I start using ES6? 
 4. What next?
 
-----
+----------------------------------------------------------------------------------------------------------------------
 # 1- What is ES6?: 
 
 ![alt text](https://farm8.staticflickr.com/7306/16407404782_8b9c57eab3_m.jpg "EcmaScript6")
@@ -72,7 +72,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 ### Do I need to migrate my javaScript code to ECMAScript 6?
 ``**There is no need**: ECMAScript 6 is a superset of ECMAScript 5. ``Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
 
----
+----------------------------------------------------------------------------------------------------------------------
 # 2- Key Features in ES6:
 
 ![alt text](http://svgporn.com/javascript.svg "ES6 JS")
@@ -91,6 +91,7 @@ We can be ready and prepared focusing on one thing in particular: ES6
 12. Set
 13. Template Strings
 
+=======================================================================================================================
 ## 01. Block Scope: let and const
 ### let()
 Up to ES6 variables are always function scoped: So, ``no matter where you declare your variable, these are going to be hoisted on the top of the scope.``
@@ -100,7 +101,40 @@ The let keyword allows you to define variables within the scope of the block (bl
 
 >  Don't replace let for var
 
+### Creating Objects:
+```javascript
+// ES5
+var o1 = "test";
+var o2 = "test2";
+var o3 = { o1:o1, o2:o2 };
+console.log( o3 );
+// ES6
+let o1 = "test1";
+let o2 = "test2";
+let o3 = { o1,o2 };
+console.log( o3 );
+```
+## Create var from Arrays:
+```javascript
+// ES5
+var c = [1,2,3];
+var p = c[0];
+console.log(p);
+// ES6
+var c = [1,2,3];
+var [a1,a2,a3] = c;
+console.log(1,2,3)
+
+## Creating Arrays:
+```javascript
+// ES6
+
+```
+
+
 #### let w/function:
+```javascript
+```
 [Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
 #### let w/looping:
@@ -147,65 +181,40 @@ console.log(no);
 ```
 [Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
-
----
+=======================================================================================================================
 ## 02. Arrow functions: =>
-1.1 Providing a work around to: ‘that = this’ or ‘bind()’
-1.2 With a more compact version of an ‘anonymous function syntax’.
+```javascript
+// ES5
+var sayHello = function(msn, name){
+    return msn + ' ' + name;
+};
+console.log(sayHello('Hi','there'));
+// ES6
+let sayHello = (msn, name) => {
+    return msn + ' ' + name;
+};
+console.log(sayHello('Hi','there'));
+```
+[Ej1: Arrow](http://www.es6fiddle.net/ic2fdnx2/)
+
+> Provide a work around to: ‘that = this’ or ‘bind()’, with a more compact version of an ‘anonymous function syntax’.
+
 ```javascript
 setTimeout(() => { console.log('Hello'); }, 2000);  
 ```
-[Ej1: Example](http://www.es6fiddle.net/ibw4crgq/)
+[Ej2: Example](http://www.es6fiddle.net/ibw4crgq/)
 ```javascript
 let square = num => num * num;
 console.log( square(10) );
 ```
-[Ej2: Example](http://www.es6fiddle.net/ibtfr5fk/)
+[Ej3: Example](http://www.es6fiddle.net/ibtfr5fk/)
 
 
-```javascript
-function Car() {
-    
-  var that = this; //locally assign this that can be closed over
-    
-  that.speed = 0;
-
-  setInterval(function goFaster() {
-    //this has a different scope, but we can use the self variable to reference the parent "this"
-    that.speed += 5;
-      console.log('now going: ' + that.speed);
-  }, 2000);
-    
-}
-
-var car = new Car();
-console.warn(car)
-```
-[Ej3: ES5 Vs. ES6: ES5 version](http://jsfiddle.net/leolanese/uz9x15x7/)
-Vs.
-```javascript
-function Car() { //Note, we could use the new Class feature in ES6 instead
-
-  this.speed = 0;
-
-  setInterval(() => {
-    this.speed += 5; //this is from Car
-    console.log('now going: ' + this.speed);
-  }, 1000);
-
-}
-
-let car = new Car();
-console.log(car)
-```
-[Ej3: ES5 Vs. ES6: ES6 version](http://www.es6fiddle.net/ibtfwm70/)
-
-
----
-## 03. Block-level scope: {}
+=======================================================================================================================
+## 3- Block-level scope: {}
 ### This creates a Temporal Dead Zone
 
----
+=======================================================================================================================
 ## 4- Classes and inheritance: class, extends, setters, getters, super, etc
 ES6 Classes are simplre sugar over the prototype-based OO Pattern. 
 
@@ -279,7 +288,46 @@ console.log( Fiat.classMethod() );
 ```
 [Ej2: ES6 Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
 
----
+## Classes
+```javascript
+function Car() {
+    
+  var that = this; //locally assign this that can be closed over
+    
+  that.speed = 0;
+
+  setInterval(function goFaster() {
+    //this has a different scope, but we can use the self variable to reference the parent "this"
+    that.speed += 5;
+      console.log('now going: ' + that.speed);
+  }, 2000);
+    
+}
+
+var car = new Car();
+console.warn(car)
+```
+[Ej3: ES5 Vs. ES6: ES5 version](http://jsfiddle.net/leolanese/uz9x15x7/)
+Vs.
+```javascript
+function Car() { //Note, we could use the new Class feature in ES6 instead
+
+  this.speed = 0;
+
+  setInterval(() => {
+    this.speed += 5; //this is from Car
+    console.log('now going: ' + this.speed);
+  }, 1000);
+
+}
+
+let car = new Car();
+console.log(car)
+```
+[Ej3: ES5 Vs. ES6: ES6 version](http://www.es6fiddle.net/ibtfwm70/)
+
+
+=======================================================================================================================
 ## 05 Modules: 
 Modules are stored in files. 
 The goal for ECMAScript 6 modules is to create a format that both users of CommonJS and of AMD are happy with.
@@ -303,14 +351,19 @@ console.log( diag(4, 3) ); // 5
 [Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
 
 
+=======================================================================================================================
 06. 
 
+=======================================================================================================================
 07.
 
-08.a
+=======================================================================================================================
+08.
 
+=======================================================================================================================
 09.
 
+=======================================================================================================================
 10. Promises
 The Promise object is used for deferred and asynchronous computations (the action of mathematical calculation). 
 
@@ -353,14 +406,17 @@ promise
 ```  
 [Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
 
+=======================================================================================================================
 11.
 
+=======================================================================================================================
 12.
 
+=======================================================================================================================
 13.
 
 
----
+----------------------------------------------------------------------------------------------------------------------
 ## 05. New utility methods for Strings, Arrays and additions to the Number and Object object
 ### String.prototype and Array.prototype
 
@@ -506,7 +562,6 @@ console.log(arr); // [2, 4, 6]
 
 ### Spread parameters values
 
-
 ### spread operator:
 ```javascript
 let arr = [-1, 7, 2, null, -0, +0, 10, 21];
@@ -587,6 +642,7 @@ console.log( obj[_id]() ); // ID007
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
 ### Destructuring
+Extract data from arrays or objects using a syntax that mirrors the construction of array and object literals
 
 ### Generators
 This  ideal for creating functions that should be exited and continued later.
@@ -595,7 +651,7 @@ This  ideal for creating functions that should be exited and continued later.
 
 ### Rest parameters
 
----
+----------------------------------------------------------------------------------------------------------------------
 # 3-  When can I start using ES6? 
 ![alt text](http://leolanese.com/es6-5.png "transpilers")
 
@@ -665,7 +721,7 @@ Notice that this script tag is using "module" as its type instead of the usual "
 
 
 
----
+----------------------------------------------------------------------------------------------------------------------
 # 4- My favourites ES6 Playgrounds and Resources:
 
 ![alt text](http://svgporn.com/github-icon.svg "Babel")
@@ -695,7 +751,7 @@ UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understand
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 
 
----
+----------------------------------------------------------------------------------------------------------------------
 # 5- What's next?
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
 <small>Source: lovemynokia.com</small>
