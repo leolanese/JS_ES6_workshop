@@ -394,17 +394,17 @@ console.log( diag(4, 3) ); // 5
 
 =======================================================================================================================
 -- 10. Promises
-The Promise object is used for deferred and asynchronous computations (the action of mathematical calculation). 
 
-> A Promise represents an operation that hasn't completed yet, but is expected to in the future.
+ES6 standardise promises and remove the external dependencies currently required to use promises.
+
+> [Promises and "Pyramid of Doom"](https://github.com/kriskowal/q)
 
 1. A Promise can have one of these states:
 1.1 Pending: initial state, not fulfilled or rejected.
 1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
 1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
 
-
-> ES6 standardise promises and remove the external dependencies currently required to use promises.
+> A Promise represents an operation that hasn't completed yet, but is expected to in the future.
 
 
 ``A pending promise can become either fulfilled with a value, or rejected with a reason (error).
@@ -415,17 +415,16 @@ Source: developer.mozilla.org
 
 ### ES6 native Promise pattern
 ```javascript
-// Promise Constructor
+// Defining: ES6 Promise Constructor
 var promise = new Promise(function(resolve, reject) {
   if(true) {
     resolve("worked!");  
   } else {
     reject("didnt work");
   }
-
 });
 
-// ES6 promise instance
+// Using: ES6 promise instance
 promise
   .then(function(result){
     console.log(result);
@@ -434,6 +433,30 @@ promise
   });
 ```  
 [Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
+
+### ES6 Promises Defining Mock Data Service
+```javascript
+var data;
+function findData(){
+  return new Promise(function (resolve, reject){
+    if (data){
+      resolve(data);
+    }else{
+      reject("data not found");
+    }
+  });
+}
+```
+### ES6 Promises Using Mock Data Service
+```javascript
+promise
+  .then(function(data){
+    console.log(data);
+  })
+  catch(function(){
+    console.log(error);
+  })
+```
 
 =======================================================================================================================
 -- 11.
