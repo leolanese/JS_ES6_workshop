@@ -379,97 +379,8 @@ console.log( diag(4, 3) ); // 5
 ```
 [Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
 
-
 =======================================================================================================================
--- 06. 
-
-=======================================================================================================================
--- 07.
-
-=======================================================================================================================
--- 08.
-
-=======================================================================================================================
--- 09.
-
-=======================================================================================================================
--- 10. Promises
-
-ES6 standardise promises and remove the external dependencies currently required to use promises.
-
-> [Promises and "Pyramid of Doom"](https://github.com/kriskowal/q)
-
-1. A Promise can have one of these states:
-1.1 Pending: initial state, not fulfilled or rejected.
-1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
-1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
-
-> A Promise represents an operation that hasn't completed yet, but is expected to in the future.
-
-
-``A pending promise can become either fulfilled with a value, or rejected with a reason (error).
-As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.``
-
-![alt text](https://mdn.mozillademos.org/files/8633/promises.png "EcmaScript6")
-Source: developer.mozilla.org
-
-### ES6 native Promise pattern
-```javascript
-// Defining: ES6 Promise Constructor
-var promise = new Promise(function(resolve, reject) {
-  if(true) {
-    resolve("worked!");  
-  } else {
-    reject("didnt work");
-  }
-});
-
-// Using: ES6 promise instance
-promise
-  .then(function(result){
-    console.log(result);
-  }, function(error){
-    console.log(error);
-  });
-```  
-[Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
-
-### ES6 Promises Defining Mock Data Service
-```javascript
-var data;
-function findData(){
-  return new Promise(function (resolve, reject){
-    if (data){
-      resolve(data);
-    }else{
-      reject("data not found");
-    }
-  });
-}
-```
-### ES6 Promises Using Mock Data Service
-```javascript
-promise
-  .then(function(data){
-    console.log(data);
-  })
-  catch(function(){
-    console.log(error);
-  })
-```
-
-=======================================================================================================================
--- 11.
-
-=======================================================================================================================
--- 12.
-
-=======================================================================================================================
--- 13.
-
-
-----------------------------------------------------------------------------------------------------------------------
-## 05. New utility methods for Strings, Arrays and additions to the Number and Object object
+-- 06. New utility methods for Strings, Arrays and additions to the Number and Object object
 ### String.prototype and Array.prototype
 
 ### Array.prototype.fill()
@@ -659,8 +570,6 @@ for (let index of 'Jon Doe') {
 [Ej2: for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
 [Ej3: for..of:loop throw Array]
 
-
-
 ### Symbol()
 A new primitive type: Symbol()
 They are tokens that serve as unique IDs.
@@ -693,17 +602,96 @@ console.log( obj[_id]() ); // ID007
 ```
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
-### Destructuring
+=======================================================================================================================
+-- 07. Destructuring
 Extract data from arrays or objects using a syntax that mirrors the construction of array and object literals
 
-### Generators
+
+=======================================================================================================================
+-- 08. Generators
 This  ideal for creating functions that should be exited and continued later.
 
 > Generator objects are both iterator and iterable.
 
-### Rest parameters
+=======================================================================================================================
+-- 09. Map
+
+=======================================================================================================================
+-- 10. Promises
+
+ES6 standardise promises and remove the external dependencies currently required to use promises.
+
+> [Promises and "Pyramid of Doom"](https://github.com/kriskowal/q)
+
+1. A Promise can have one of these states:
+1.1 Pending: initial state, not fulfilled or rejected.
+1.2 Fulfilled: meaning that the operation completed successfully: fulfilled with a value
+1.3 Rejected: meaning that the operation failed: rejected with a reason (error).
+
+> A Promise represents an operation that hasn't completed yet, but is expected to in the future.
+
+``A pending promise can become either fulfilled with a value, or rejected with a reason (error).
+As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.``
+
+![alt text](https://mdn.mozillademos.org/files/8633/promises.png "EcmaScript6")
+Source: developer.mozilla.org
+
+### ES6 native Promise pattern
+```javascript
+// Defining: ES6 Promise Constructor
+var promise = new Promise(function(resolve, reject) {
+  if(true) {
+    resolve("worked!");  
+  } else {
+    reject("didnt work");
+  }
+});
+
+// Using: ES6 promise instance
+promise
+  .then(function(result){
+    console.log(result);
+  }, function(error){
+    console.log(error);
+  });
+```  
+[Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
+
+### ES6 Promises Defining Mock Data Service
+```javascript
+var data;
+function findData(){
+  return new Promise(function (resolve, reject){
+    if (data){
+      resolve(data);
+    }else{
+      reject("data not found");
+    }
+  });
+}
+```
+### ES6 Promises Using Mock Data Service
+```javascript
+promise
+  .then(function(data){
+    console.log(data);
+  })
+  catch(function(){
+    console.log(error);
+  })
+```
+
+=======================================================================================================================
+-- 11. 
+
+=======================================================================================================================
+-- 12. 
+
+=======================================================================================================================
+-- 13. Template Strings
 
 ----------------------------------------------------------------------------------------------------------------------
+
 # 3-  When can I start using ES6? 
 ![alt text](http://leolanese.com/es6-5.png "transpilers")
 
@@ -766,12 +754,8 @@ Notice that this script tag is using "module" as its type instead of the usual "
 ### Try it out in the browser
 [Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
 
-
 ## Automatic Transpilers: Building Automatically using Gulp, Babel, NodeJS: Using ES6
 [gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
-
-
-
 
 ----------------------------------------------------------------------------------------------------------------------
 # 4- My favourites ES6 Playgrounds and Resources:
@@ -803,6 +787,8 @@ ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 
 
 ----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 # 5- What's next?
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
 <small>Source: lovemynokia.com</small>
+
