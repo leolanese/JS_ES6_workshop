@@ -608,8 +608,12 @@ Extract data from arrays or objects using a syntax that mirrors the construction
 
 
 =======================================================================================================================
--- 08. Generators
-This  ideal for creating functions that should be exited and continued later.
+-- 08. Generators: yield(pause), next()(resume), function*/ function *
+With ES6 generators creates a function, which may be paused and resume execution, one or many times, allowing other code to run during these paused periods.
+
+> ES6 generator functions are "cooperative" in their concurrency behavior. 
+
+This  ideal for creating functions that should be exited and continued later: we run the generator and yield when we restart the generator again, we will send a value back in, and whatever we send in will be the computed result of that yield ___ expression.
 
 > Generator objects are both iterator and iterable.
 
@@ -617,6 +621,51 @@ What is a Generator?
 1. Factory for special type of function declared using function* or function *
 2. Can be exited at any point using: yield
 3. Resumes at same point and same state if invoked back again
+4. Provides 2-way communication: 
+We trigger the generator, the yield value it sends out, generator is paused, later (at any time), generator is trigger again thnen is restarted and will give a value back.
+
+
+```javascript
+// both are valids
+function* foo(){ }
+
+function *foo(){ }
+```
+
+```javascript
+function *foo() {
+    yield 1;
+    return 2;
+}
+
+var it = foo();
+
+console.log( it.next() ); // { value:1, done:false }
+console.log( it.next() ); // { value:2, done:true }
+```
+[Ej1: ES6 generators](http://www.es6fiddle.net/ic3t0tn7/)
+
+
+```javascript
+function *foo(x) {
+    var y = 2 * (yield (x + 1));
+    var z = yield (y / 3);
+    return (x + y + z);
+}
+
+var it = foo( 5 );
+
+// note: not sending anything into <code>next()</code> here
+console.log( it.next() );       // { value:6, done:false }
+console.log( it.next( 12 ) );   // { value:8, done:false }
+console.log( it.next( 13 ) );   // { value:42, done:true }
+```
+[Ej2: ES6 generators](http://www.es6fiddle.net/ic3t2ex1/)
+
+
+
+
+
 
 =======================================================================================================================
 -- 09. Map
