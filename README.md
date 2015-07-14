@@ -744,7 +744,6 @@ ECMAScript 6 compatibility Table | [Can I use ES6](http://kangax.github.io/compa
 Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
 Harmony Specification | [ECMA-262 Edition-6](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts)
 
-
 ## ES6 transpilers
 Looking for   | Go to
 ------------- | -------------
