@@ -662,13 +662,28 @@ console.log( it.next( 13 ) );   // { value:42, done:true }
 ```
 [Ej2: ES6 generators](http://www.es6fiddle.net/ic3t2ex1/)
 
-
-
-
-
-
 =======================================================================================================================
--- 09. Map
+-- 09. Map and WeakMap: set, get, delete
+
+```javascript
+var map = new Map();
+map.set("n", "nn");
+map.set("n1", "nn1");
+
+console.log( map.get("n") );
+console.log( map.has("n1") );
+
+console.log( map.delete("n1") );
+console.log( map.has("n1") );
+```
+[Ej1: Map](http://www.es6fiddle.net/ic3uxh64/)
+
+### WeakMap
+- Similar to Map
+- Keys must be objetcs
+- keys are garbage-collected (usefull to prevent memory leaks)
+- Can;t be iterated
+
 
 =======================================================================================================================
 -- 10. Promises
