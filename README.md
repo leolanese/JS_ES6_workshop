@@ -613,6 +613,11 @@ This  ideal for creating functions that should be exited and continued later.
 
 > Generator objects are both iterator and iterable.
 
+What is a Generator?
+1. Factory for special type of function declared using function* or function *
+2. Can be exited at any point using: yield
+3. Resumes at same point and same state if invoked back again
+
 =======================================================================================================================
 -- 09. Map
 
