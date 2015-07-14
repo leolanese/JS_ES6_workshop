@@ -133,8 +133,27 @@ console.log(1,2,3)
 ```
 
 
-#### let w/function:
+#### let w/function with scope and block scope:
 ```javascript
+// scope
+function fScope() {
+    if(true) {
+        var sun = 'here'; // sun is "hoisted" to the function block
+    }
+    console.log('sun is ' + sun); // sun is visible
+}
+fScope();
+
+
+// block scope
+// the let keyword allows you to define variables within the scope
+function fBlockScoped() {
+    if(true) {
+        let sun = 'here'; // sun is NOT "hoisted" out of this block
+    }
+    console.log('sun is ' + sun); // sun is not defined
+}
+fBlockScoped();
 ```
 [Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
 
