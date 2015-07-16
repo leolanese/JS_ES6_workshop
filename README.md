@@ -846,7 +846,7 @@ Typescriptlang          |[http://www.typescriptlang.org/](http://www.typescriptl
 BabelJS       |[babeljs.io](https://babeljs.io/repl/)
 Traceur        |[google.github.io](http://google.github.io/traceur-compiler/demo/repl.html#)
 ES6Fiddle          |[ES6Fiddle](http://www.es6fiddle.net/)
-ESnext          |[esnext.github.io](http://esnext.github.io)
+ESnext (This project has merged with Babel)   |[esnext.github.io](http://esnext.github.io)
 
 ## ES6 Documentation
 Looking for   | Go to
