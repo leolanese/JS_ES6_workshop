@@ -61,6 +61,9 @@ We will be ready, our product will be future proof and as a developer we will be
 A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2
 
 ![alt text](http://svgporn.com/angular.svg "EcmaScript6")
+
+![alt text](http://reactjs.net/guides/es6.html)
+
 ### AngularJS 2:
 **AngularJS2 it’s going to be a big deal.**
 ``If you worry to get ready to AngularJS2, about being ready from a knowledge standpoint there are some new things that you should know about.``
@@ -68,6 +71,10 @@ A large number of the top libraries that are building these days are all going t
 ### What can we do right now in order to be up to date when AngularJS 2 comes?
 If you want to be ready for AJS2 we can start learning ES6, and **we’ll be ahead of the game**.
 We can be ready and prepared focusing on one thing in particular: ES6
+
+## What is typeScript:
+Angular2 is written in TypeScript. TypeScript is superset of ES6, which is superset of ES5.  Angular2 production build is being transpiled to ES5 in order to be executable by the modern browsers. You also can chose whether you want to write your code in ES5, ES6, TypeScript (of course if you chose ES6, TypeScript your code should go through a process of compilation in order to be transpiled).
+![alt text](http://blog.mgechev.com/images/js-dialects-ven.png "typeScript")
 
 ### Do I need to migrate my javaScript code to ECMAScript 6?
 ``**There is no need**: ECMAScript 6 is a superset of ECMAScript 5. ``Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
