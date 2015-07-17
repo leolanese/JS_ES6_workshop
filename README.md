@@ -72,11 +72,16 @@ A large number of the top libraries that are building these days are all going t
 If you want to be ready for AJS2 we can start learning ES6, and **we’ll be ahead of the game**.
 We can be ready and prepared focusing on one thing in particular: ES6
 
-## What is typeScript:
-Angular2 is written in TypeScript. TypeScript is superset of ES6, which is superset of ES5.  Angular2 production build is being transpiled to ES5 in order to be executable by the modern browsers. You also can chose whether you want to write your code in ES5, ES6, TypeScript (of course if you chose ES6, TypeScript your code should go through a process of compilation in order to be transpiled).
+## TypeScript and ES6:
+**Angular2 is written in TypeScript. TypeScript is superset of ES6, which is superset of ES5. ** 
+
 ![alt text](http://blog.mgechev.com/images/js-dialects-ven.png "typeScript")
 
-### Do I need to migrate my javaScript code to ECMAScript 6?
+### Can I use ES6 on AngularJS2?
+Angular2 production build is being transpiled to ES5 in order to be executable by the modern browsers. You also can choose whether you want to write your code in ES5, ES6, TypeScript (of course if you choose ES6, TypeScript your code should go through a process of compilation in order to be transpiled).
+
+
+### Do I need to migrate my javaScript code to ES6?
 ``**There is no need**: ECMAScript 6 is a superset of ECMAScript 5. ``Therefore, all of your ES5 code is automatically ES6 code. How exactly ES6 stays completely backwards compatible
 
 ----------------------------------------------------------------------------------------------------------------------
