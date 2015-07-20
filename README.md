@@ -61,14 +61,15 @@ We will be ready, our product will be future proof and as a developer we will be
 A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2, etc.
 
 
-![alt text](http://www.leolanese.com/ES6/img/angular.svg "AngularJS")
-![alt text](https://angular.io/features.html "AngularJS and ES6")
+![AngularJS](http://www.leolanese.com/ES6/img/angular.svg "AngularJS")
+![AngularJS and ES6 link](https://angular.io/features.html "AngularJS and ES6")
 
-![alt text](http://www.leolanese.com/ES6/img/ember.svg "EmberJS")
-![alt text](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html "EmberJS and ES6")
 
-![alt text](http://www.leolanese.com/ES6/img/react.svg "ReactJS")
-![alt text](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html "ReactJS and ES6")
+![EmberJS](http://www.leolanese.com/ES6/img/ember.svg "EmberJS")
+![EmberJS and ES6 link](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html "EmberJS and ES6")
+
+![ReactJS](http://www.leolanese.com/ES6/img/react.svg "ReactJS")
+![ReactJS and ES6 link](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html)
 
 
 ### AngularJS 2:
