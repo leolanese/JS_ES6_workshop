@@ -58,11 +58,18 @@ Reality check: ``**ES6 is an enhancement of ES5.** ES6 brings new features, solv
 We are developers, we are progressive. **We want to learn the latest things so we can build the best applications possible.**
 We will be ready, our product will be future proof and as a developer we will be more marketable as a coder in the industry.
 
-A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2
+A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2, etc.
 
-![alt text](http://svgporn.com/angular.svg "EcmaScript6")
 
-![alt text](http://reactjs.net/guides/es6.html)
+![alt text](http://www.leolanese.com/ES6/img/angular.svg "AngularJS")
+![alt text](https://angular.io/features.html "AngularJS and ES6")
+
+![alt text](http://www.leolanese.com/ES6/img/ember.svg "EmberJS")
+![alt text](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html "EmberJS and ES6")
+
+![alt text](http://www.leolanese.com/ES6/img/react.svg "ReactJS")
+![alt text](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html "ReactJS and ES6")
+
 
 ### AngularJS 2:
 **AngularJS2 it’s going to be a big deal.**
@@ -72,7 +79,7 @@ A large number of the top libraries that are building these days are all going t
 If you want to be ready for AJS2 we can start learning ES6, and **we’ll be ahead of the game**.
 We can be ready and prepared focusing on one thing in particular: ES6
 
-## TypeScript and ES6:
+## ES6 and TypeScript:
 **Angular2 is written in TypeScript. TypeScript is superset of ES6, which is superset of ES5. ** 
 
 ![alt text](http://blog.mgechev.com/images/js-dialects-ven.png "typeScript")
@@ -87,7 +94,7 @@ Angular2 production build is being transpiled to ES5 in order to be executable b
 ----------------------------------------------------------------------------------------------------------------------
 # 2- Key Features in ES6:
 
-![alt text](http://svgporn.com/javascript.svg "ES6 JS")
+![alt text](http://www.leolanese.com/ES6/img/es6.svg "JS")
 
 01. Block Scope
 02. Arrow functions
@@ -780,7 +787,7 @@ How to start using ES6 now?
 ```it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
 ## Transpilers: using Babel
-![alt text](http://svgporn.com/babel.svg "Babel")
+![alt text](http://www.leolanese.com/ES6/img/babel.svg "babel")
 [Babel Playgroud](https://babeljs.io/repl/) 
 
 -[......todo: incluir terminal examples TODO more example]-
@@ -841,7 +848,7 @@ Notice that this script tag is using "module" as its type instead of the usual "
 ----------------------------------------------------------------------------------------------------------------------
 # 4- My favourites ES6 Playgrounds and Resources:
 
-![alt text](http://svgporn.com/github-icon.svg "Babel")
+![alt text](http://www.leolanese.com/ES6/img/github.svg "github")
 
 ## ES6 Resources
 Looking for   | Go to
