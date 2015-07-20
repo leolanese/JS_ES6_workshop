@@ -62,14 +62,14 @@ A large number of the top libraries that are building these days are all going t
 
 
 ![AngularJS](http://www.leolanese.com/ES6/img/angular.svg "AngularJS")
-![AngularJS and ES6 link](https://angular.io/features.html "AngularJS and ES6")
+[AngularJS and ES6 link](https://angular.io/features.html)
 
 
 ![EmberJS](http://www.leolanese.com/ES6/img/ember.svg "EmberJS")
-![EmberJS and ES6 link](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html "EmberJS and ES6")
+[EmberJS and ES6 link](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html)
 
 ![ReactJS](http://www.leolanese.com/ES6/img/react.svg "ReactJS")
-![ReactJS and ES6 link](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html)
+[ReactJS and ES6 link](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html)
 
 
 ### AngularJS 2:
