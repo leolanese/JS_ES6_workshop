@@ -61,14 +61,14 @@ We will be ready, our product will be future proof and as a developer we will be
 A large number of the top libraries that are building these days are all going to be written in ES6 in the near future, ES6  will positioning an step ahead and we will be ready for AngularJS 2, Ember 2, etc.
 
 
-![AngularJS](http://www.leolanese.com/ES6/img/angular.svg "AngularJS")
+![AngularJS](http://www.leolanese.com/angular.svg "AngularJS")
 [AngularJS and ES6 link](https://angular.io/features.html)
 
 
-![EmberJS](http://www.leolanese.com/ES6/img/ember.svg "EmberJS")
+![EmberJS](http://www.leolanese.com/ember.svg "EmberJS")
 [EmberJS and ES6 link](http://emberjs.com/blog/2014/02/15/core-team-meeting-minutes-2014-02-14.html)
 
-![ReactJS](http://www.leolanese.com/ES6/img/react.svg "ReactJS")
+![ReactJS](http://www.leolanese.com/react.svg "ReactJS")
 [ReactJS and ES6 link](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html)
 
 
@@ -95,7 +95,7 @@ Angular2 production build is being transpiled to ES5 in order to be executable b
 ----------------------------------------------------------------------------------------------------------------------
 # 2- Key Features in ES6:
 
-![alt text](http://www.leolanese.com/ES6/img/es6.svg "JS")
+![alt text](http://www.leolanese.com/es6.svg "JS")
 
 01. Block Scope
 02. Arrow functions
@@ -788,7 +788,7 @@ How to start using ES6 now?
 ```it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
 ## Transpilers: using Babel
-![alt text](http://www.leolanese.com/ES6/img/babel.svg "babel")
+![alt text](http://www.leolanese.com/babel.svg "babel")
 [Babel Playgroud](https://babeljs.io/repl/) 
 
 -[......todo: incluir terminal examples TODO more example]-
@@ -849,7 +849,7 @@ Notice that this script tag is using "module" as its type instead of the usual "
 ----------------------------------------------------------------------------------------------------------------------
 # 4- My favourites ES6 Playgrounds and Resources:
 
-![alt text](http://www.leolanese.com/ES6/img/github.svg "github")
+![alt text](http://www.leolanese.com/github.svg "github")
 
 ## ES6 Resources
 Looking for   | Go to
