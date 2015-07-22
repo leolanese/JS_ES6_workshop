@@ -1,6 +1,7 @@
 # ES6 workshop
 ## The road to ECMAScript 6: "New solutions for old JS problems"
 
+![alt text](http://www.leolanese.com/javascript.svg "JS")
 
 > ECMA Script 6 Edition has been finally released under [Standard ECMA-262, 6th edition (June 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm), and is here to stay.
 
