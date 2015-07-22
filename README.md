@@ -788,7 +788,7 @@ How to start using ES6 now?
 ```it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
 ## Transpilers: using Babel
-
+![alt text](http://www.leolanese.com/babel.svg "babel")
 [Babel Playgroud](https://babeljs.io/repl/) 
 
 -[......todo: incluir terminal examples TODO more example]-
