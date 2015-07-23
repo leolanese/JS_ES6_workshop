@@ -1046,6 +1046,7 @@ Looking for   | Go to
 Exploring-es6  Book        | [Axel Rauschmayer](https://leanpub.com/exploring-es6/read)
 UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
+Angular2 Using ES6 Starter | [Dan Wahlin](https://github.com/DanWahlin/Angular2-Starter)
 
 
 ----------------------------------------------------------------------------------------------------------------------
