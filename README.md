@@ -580,16 +580,27 @@ console.log(tpl);
 ```
 [Ej1: template literal](http://www.es6fiddle.net/ibnoh9mz/)
 
-### for...of
+### for-of loops
 Strings are iterable, which means that you can use for-of to iterate over their characters
+
+
+### basic syntax
 ```javascript
-for (let index of 'Jon Doe') {
+**for** (let index **of** 'Jon Doe') {
     console.log(index);
 }
 ```
-[Ej1: for...of](http://www.es6fiddle.net/ibnq4vte/)
-[Ej2: for...of with template literal](http://www.es6fiddle.net/ibnqk83n/)
-[Ej3: for..of:loop throw Array]
+> yes, no more index!
+
+![alt text](http://leolanese.com/jsperf.png "benchmarks")
+
+[Eg1: for-of](http://www.es6fiddle.net/ibnq4vte/)
+
+[Eg2: for-of with template literal](http://www.es6fiddle.net/ibnqk83n/)
+
+[Eg3: for-of loop throw Array]
+
+
 
 ### Symbol()
 A new primitive type: Symbol()
@@ -772,10 +783,10 @@ promise
 ```
 
 =======================================================================================================================
--- 11. 
+-- 11. Rest parameters      
 
 =======================================================================================================================
--- 12. 
+-- 12. Set
 
 =======================================================================================================================
 -- 13. Template Strings
