@@ -580,17 +580,24 @@ console.log(tpl);
 ```
 [Ej1: template literal](http://www.es6fiddle.net/ibnoh9mz/)
 
-### for-of loops
+### for-of and for-in loops [ecma-international.org docs](http://www.ecma-international.org/ecma-262/6.0/#sec-for-in-and-for-of-statements)
 Strings are iterable, which means that you can use for-of to iterate over their characters
-
+While for-in iterates over "property names", for-of iterates over "property values"
 
 ### basic syntax
 ```javascript
-**for** (let index **of** 'Jon Doe') {
-    console.log(index);
+for (let index in 'Jon Doe') { // property names
+    console.log(index); // 0,1,2,3,4,5,6
 }
 ```
-> yes, no more index!
+[Eg: for-in](http://www.es6fiddle.net/icg5tsxn/)
+
+```javascript
+for (let index of 'Jon Doe') { // property values
+    console.log(index); // J,o,n,,D,o,e
+}
+```
+[Eg: for-in](http://www.es6fiddle.net/icg5u5q0/)
 
 ![alt text](http://leolanese.com/jsperf1.jpg "benchmarks")
 
@@ -598,7 +605,7 @@ Strings are iterable, which means that you can use for-of to iterate over their 
 
 [Eg2: for-of with template literal](http://www.es6fiddle.net/ibnqk83n/)
 
-[Eg3: for-of loop throw Array]
+[Eg3: for-of loop throw Array]()
 
 
 
