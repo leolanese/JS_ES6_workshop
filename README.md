@@ -592,7 +592,7 @@ Strings are iterable, which means that you can use for-of to iterate over their 
 ```
 > yes, no more index!
 
-![alt text](http://leolanese.com/jsperf1.png "benchmarks")
+![alt text](http://leolanese.com/jsperf1.jpg "benchmarks")
 
 [Eg1: for-of](http://www.es6fiddle.net/ibnq4vte/)
 
