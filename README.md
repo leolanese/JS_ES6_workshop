@@ -700,10 +700,11 @@ This  ideal for creating functions that should be exited and continued later: we
 > Provides a solutions for a endless callback problem
 
 What is a Generator?
-1. Factory for special type of function declared using function* or function *
-2. Can be exited at any point using: yield
-3. Resumes at same point and same state if invoked back again
-4. Provides 2-way communication: 
+- it is now possible to suspend code execution
+- Factory for special type of function declared using function* or function *
+- Can be exited at any point using: yield
+- Resumes at same point and same state if invoked back again
+- Provides 2-way communication: 
 We trigger the generator, the yield value it sends out, generator is paused, later (at any time), generator is trigger again thnen is restarted and will give a value back.
 
 
@@ -723,9 +724,27 @@ function *foo() {
 var it = foo();
 
 console.log( it.next() ); // { value:1, done:false }
+console.log( it.next().value ); // undefined
 console.log( it.next() ); // { value:2, done:true }
+console.log( it.next() ); // { value:undefined, done:true }
+console.log( it.next().value ); // undefined
+console.log( it.next().done ); // true
 ```
-[Ej1: ES6 generators](http://www.es6fiddle.net/ic3t0tn7/)
+[Eg1: ES6 generators: value, done](http://www.es6fiddle.net/icgaoklw/)
+
+
+```javascript
+function* counter(){
+  var index = 0;
+  while(true) yield index++;
+}
+var c = counter();
+
+console.log( c.next() ); // Object {value: 0, done: false}
+console.log( c.next().value ); // 1
+console.log( c.next().done ); // false
+```
+[eg2: ES6 generators: value, done](http://www.es6fiddle.net/icgaluf9/)
 
 
 ```javascript
@@ -742,7 +761,7 @@ console.log( it.next() );       // { value:6, done:false }
 console.log( it.next( 12 ) );   // { value:8, done:false }
 console.log( it.next( 13 ) );   // { value:42, done:true }
 ```
-[Ej2: ES6 generators](http://www.es6fiddle.net/ic3t2ex1/)
+[Eg2: ES6 generators: send](http://www.es6fiddle.net/ic3t2ex1/)
 
 
 ### Some frameworks already using Generators:
