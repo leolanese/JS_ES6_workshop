@@ -792,7 +792,55 @@ How to start using ES6 now?
 ![alt text](http://www.leolanese.com/babel.svg "babel")
 [Babel Playgroud](https://babeljs.io/repl/) 
 
--[......todo: incluir terminal examples TODO more example]-
+### Dynamically transpiled ES6 on Node.js via Babel
+
+### Install Babel:
+```
+npm install --save-dev -g babel
+```
+
+### Test ES6 on Terminal:
+```
+babel-node
+[1,2,3].map(x => x * x); // [ 1, 4, 9]
+```
+
+### That will transform into ES5:
+```javascript
+"use strict";
+
+[1, 2, 3].map(function (x) {
+  return x * x;
+});
+```
+[ES6/ES5 Babel playground](https://babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=true&playground=true&code=%5B1%2C2%2C3%5D.map(x%20%3D%3E%20x%20*%20x)%3B)
+
+
+### Another ES6 on terminal:
+```
+const sum = arr => arr.reduce((a, b) => a + b);
+console.log( 'sum: ', sum([1,2,3]) )
+```
+
+### That will transform into ES5:
+```javascript
+'use strict';
+
+var _temporalUndefined = {};
+var sum = _temporalUndefined;
+
+function _temporalAssertDefined(val, name, undef) { if (val === undef) { throw new ReferenceError(name + ' is not defined - temporal dead zone'); } return true; }
+
+sum = function sum(arr) {
+  return arr.reduce(function (a, b) {
+    return a + b;
+  });
+};
+
+console.log('sum: ', (_temporalAssertDefined(sum, 'sum', _temporalUndefined) && sum)([1, 2, 3]));
+```
+[ES6/ES5 Babel playground](https://babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=true&playground=true&code=const%20sum%20%3D%20arr%20%3D%3E%20arr.reduce((a%2C%20b)%20%3D%3E%20a%20%2B%20b)%3B%0Aconsole.log(%20'sum%3A%20'%2C%20sum(%5B1%2C2%2C3%5D)%20))
+
 
 ## Transpilers: using Google Traceur 
 ![alt text](http://leolanese.com/tc.png "Google Traceur")
