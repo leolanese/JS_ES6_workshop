@@ -842,7 +842,7 @@ console.log('sum: ', (_temporalAssertDefined(sum, 'sum', _temporalUndefined) && 
 [ES6/ES5 Babel playground](https://babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=true&playground=true&code=const%20sum%20%3D%20arr%20%3D%3E%20arr.reduce((a%2C%20b)%20%3D%3E%20a%20%2B%20b)%3B%0Aconsole.log(%20'sum%3A%20'%2C%20sum(%5B1%2C2%2C3%5D)%20))
 
 
-## Transpilers: using Google Traceur 
+## Transpilers on the bropwser: using Google Traceur 
 ![alt text](http://leolanese.com/tc.png "Google Traceur")
 
 Please add this code before the </body> tag in order to use the traceur package:
@@ -892,7 +892,11 @@ Notice that this script tag is using "module" as its type instead of the usual "
 ### Try it out in the browser
 [Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
 
-## Automatic Transpilers: Building Automatically using Gulp, Babel, NodeJS: Using ES6
+---
+
+![alt text](http://www.leolanese.com/gulp.svg "gulp")
+![alt text](http://www.leolanese.com/grunt.svg "grunt")
+# Automatic Transpilers: Building Automatically using Gulp, Babel, NodeJS: Using ES6
 [gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
 
 ----------------------------------------------------------------------------------------------------------------------
