@@ -223,7 +223,7 @@ console.log(no);
 [Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
 =======================================================================================================================
--- 02. Arrow functions: =>
+-- 02. Arrow functions: => [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions)
 ```javascript
 // ES5
 var sayHello = function(msn, name){
@@ -261,11 +261,13 @@ console.log( square(10) );
 
 
 =======================================================================================================================
--- 3- Block-level scope: {}
+-- 3- Block-level scope: {} [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-block-level-function-declarations-web-legacy-compatibility-semantics)
 ### This creates a Temporal Dead Zone
 
+
+
 =======================================================================================================================
--- 4- Classes and inheritance: class, extends, setters, getters, super, etc
+-- 4- Classes and inheritance: class, extends, setters, getters, super, etc [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-functions-and-classes)
 ES6 Classes are simplre sugar over the prototype-based OO Pattern. 
 
 > Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
@@ -378,7 +380,7 @@ console.log(car)
 
 
 =======================================================================================================================
--- 05 Modules: 
+-- 05 Modules [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-scripts-and-modules)
 Modules are stored in files. 
 The goal for ECMAScript 6 modules is to create a format that both users of CommonJS and of AMD are happy with.
 
@@ -642,12 +644,12 @@ console.log( obj[_id]() ); // ID007
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
 =======================================================================================================================
--- 07. Destructuring
+-- 07. Destructuring [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-binding-patterns)
 Extract data from arrays or objects using a syntax that mirrors the construction of array and object literals
 
 
 =======================================================================================================================
--- 08. Generators: yield(pause), next()(resume), function*/ function *
+-- 08. Generators: yield(pause), next()(resume), function*/ function * [ecma-international.org/](http://www.ecma-international.org/ecma-262/6.0/#sec-generator-abstract-operations)
 With ES6 generators creates a function, which may be paused and resume execution, one or many times, allowing other code to run during these paused periods.
 
 > ES6 generator functions are "cooperative" in their concurrency behavior. 
@@ -702,7 +704,7 @@ console.log( it.next( 13 ) );   // { value:42, done:true }
 [Ej2: ES6 generators](http://www.es6fiddle.net/ic3t2ex1/)
 
 =======================================================================================================================
--- 09. Map and WeakMap: set, get, delete
+-- 09. Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
 
 ```javascript
 var map = new Map();
@@ -725,7 +727,7 @@ console.log( map.has("n1") );
 
 
 =======================================================================================================================
--- 10. Promises
+-- 10. Promises [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-promise-executor)
 
 ES6 standardise promises and remove the external dependencies currently required to use promises.
 
