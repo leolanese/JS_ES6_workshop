@@ -597,11 +597,13 @@ console.log(tpl);
 ```
 [Ej1: template literal](http://www.es6fiddle.net/ibnoh9mz/)
 
-### for-of and for-in loops [ecma-international.org docs](http://www.ecma-international.org/ecma-262/6.0/#sec-for-in-and-for-of-statements)
-Strings are iterable, which means that you can use for-of to iterate over their characters
-While for-in iterates over "property names", for-of iterates over "property values"
+### for-of loops [ecma-international.org docs](http://www.ecma-international.org/ecma-262/6.0/#sec-for-in-and-for-of-statements)
+In addition to the classic for-in statement, ES6 has added the for-of statement .
 
-### basic syntax
+**Strings are iterable, which means that you can use for-of to iterate over their characters
+While for-in iterates over "property names", for-of iterates over "property values"**
+
+### basic syntax for-in
 ```javascript
 for (let index in 'Jon Doe') { // property names
     console.log(index); // 0,1,2,3,4,5,6
@@ -616,11 +618,35 @@ for (let index of 'Jon Doe') { // property values
 ```
 [Eg: for-in](http://www.es6fiddle.net/icg5u5q0/)
 
+
+```javascript
+var arr = [1, 2, 3];
+for (var n of arr) console.log(n); // 1,2,3
+```
+[Eg3: simple for-of loop throw Array](http://www.es6fiddle.net/icg95lvv/)
+
+```javascript
+for (let index of 'Jon Doe') {
+    console.log(index);
+}
+```
 [Eg1: for-of](http://www.es6fiddle.net/ibnq4vte/)
 
+
+```javascript
+let arr = ['Hello', 'world', "!"];
+
+for (let element of arr) {
+  console.log(element);
+}
+
+for (let [index,element] of arr.entries()) {
+  console.log(`${index}. ${element}`);
+}
+```
 [Eg2: for-of with template literal](http://www.es6fiddle.net/ibnqk83n/)
 
-[Eg3: for-of loop throw Array]()
+
 
 
 
@@ -671,6 +697,8 @@ This  ideal for creating functions that should be exited and continued later: we
 
 > Generator objects are both iterator and iterable.
 
+> Provides a solutions for a endless callback problem
+
 What is a Generator?
 1. Factory for special type of function declared using function* or function *
 2. Can be exited at any point using: yield
@@ -716,27 +744,46 @@ console.log( it.next( 13 ) );   // { value:42, done:true }
 ```
 [Ej2: ES6 generators](http://www.es6fiddle.net/ic3t2ex1/)
 
+
+### Some frameworks already using Generators:
+[CO Framework](https://github.com/tj/co)
+[KAO Framework](http://koajs.com/#)
+
+### More about them: 
+[what-are-generators (tobyho.com)](http://tobyho.com/2013/06/16/what-are-generators/)
+[es6-generators (davidwalsh)](http://davidwalsh.name/es6-generators)
+
 =======================================================================================================================
 -- 09. Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
 
 ```javascript
-var map = new Map();
-map.set("n", "nn");
-map.set("n1", "nn1");
+var m = new Map();
 
-console.log( map.get("n") );
-console.log( map.has("n1") );
+m.set("n", "nn");
+console.log( m.size ); // 1
 
-console.log( map.delete("n1") );
-console.log( map.has("n1") );
+m.set("n1", "nn1");
+console.log( m.size ); // 2
+
+console.log( m.get("n") ); // nn
+console.log( m.has("n1") ); // true
+console.log( m.delete("n1") ); // true
+console.log( m.has("n1") ); // false
+
+m.forEach(function(value, key){ console.log( key + ' maps to ' + value) }) // n maps to nn
 ```
-[Ej1: Map](http://www.es6fiddle.net/ic3uxh64/)
+[Ej1: Map](http://www.es6fiddle.net/icg8kb43/)
 
 ### WeakMap
 - Similar to Map
+- The word "weak" refers to weak references. A weak reference is an object reference that is ignored by the garbage collector.
 - Keys must be objetcs
 - keys are garbage-collected (usefull to prevent memory leaks)
-- Can;t be iterated
+- Can't be iterated
+- Cannot get the size of a WeakMap 
+- Cannot iterate over it's keys or values
+- WeakSet has no size property, or a way of iterating its members (references are weak so can be destroyes without notice)
+
 
 
 =======================================================================================================================
