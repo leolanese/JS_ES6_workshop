@@ -128,19 +128,26 @@ The let keyword allows you to define variables within the scope of the block (bl
 var o1 = "test";
 var o2 = "test2";
 var o3 = { o1:o1, o2:o2 };
-console.log( o3 );
+console.log( o3 ); // Object {o1: "test1", o2: "test2"}
+[eg1:](http://www.es6fiddle.net/icg82t9k/)
+```
+```javascript
 // ES6
 let o1 = "test1";
 let o2 = "test2";
 let o3 = { o1,o2 };
-console.log( o3 );
+console.log( o3 ); // Object {o1: "test1", o2: "test2"}
 ```
+[eg1:](http://www.es6fiddle.net/icg84b9e/)
+
 ## Create var from Arrays:
 ```javascript
 // ES5
 var c = [1,2,3];
 var p = c[0];
 console.log(p);
+```
+```javascript
 // ES6
 var c = [1,2,3];
 var [a1,a2,a3] = c;
@@ -149,10 +156,9 @@ console.log(1,2,3)
 ## Creating Arrays:
 ```javascript
 // ES6
-[todo ]
+Array.of(1, 2, 3); 
 
 ```
-
 
 #### let w/function with scope and block scope:
 ```javascript
@@ -436,7 +442,7 @@ console.log(str.startsWith('Hello')); // True
 var str = 'Hello World!';
 console.log(str.endsWith('Hello')); // False
 ```
-[Ej1: endsWith](http://www.es6fiddle.net/ibt9dddr/)
+[Ej1: endsWith()](http://www.es6fiddle.net/ibt9dddr/)
 
 ### String.prototype.includes()
 ```javascript
@@ -444,20 +450,29 @@ var str = 'Hello World!';
 console.log(str.includes(' ')); // True
 console.log( 'JS '.repeat(3) ); // JS JS JS
 ```
-[Ej1: includes](http://www.es6fiddle.net/ibt9ef15/)
+[Ej1: includes()](http://www.es6fiddle.net/ibt9ef15/)
 
-### Array.of()
+### Array.of(element0[, element1[, ...[, elementN]]])
 ```javascript
 var arr = new Array([1,2,3]); // ES4.1
 var arr1 = [1, 2, 3]; // ES4.1
 let arr2 = Array.of(1, 2, 3); // ES6
 
-console.log(arr);
-console.log(arr1);
-console.log(arr2);
+console.log(arr); // 1,2,3
+console.log(arr1); // 1,2,3
+console.log(arr2); // 1,2,3 
 ```
 [Ej1: Array.of](http://www.es6fiddle.net/ibtg9a0r/)
 
+
+### Array.from(arrayLike[, mapFn[, thisArg]])
+```javascript
+function a(){
+  return Array.from(arguments);
+}
+console.log( a(1, 2, 3));  // [1, 2, 3]
+```
+[eg: Array.from](http://www.es6fiddle.net/icg8ah1y/)
 
 ### Additions to the Number Object: isNaN
 ```javascript
