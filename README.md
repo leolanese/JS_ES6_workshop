@@ -601,8 +601,6 @@ for (let index of 'Jon Doe') { // property values
 ```
 [Eg: for-in](http://www.es6fiddle.net/icg5u5q0/)
 
-![alt text](http://leolanese.com/jsperf1.jpg "benchmarks")
-
 [Eg1: for-of](http://www.es6fiddle.net/ibnq4vte/)
 
 [Eg2: for-of with template literal](http://www.es6fiddle.net/ibnqk83n/)
