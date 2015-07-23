@@ -841,53 +841,63 @@ console.log('sum: ', (_temporalAssertDefined(sum, 'sum', _temporalUndefined) && 
 ```
 [ES6/ES5 Babel playground](https://babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=true&playground=true&code=const%20sum%20%3D%20arr%20%3D%3E%20arr.reduce((a%2C%20b)%20%3D%3E%20a%20%2B%20b)%3B%0Aconsole.log(%20'sum%3A%20'%2C%20sum(%5B1%2C2%2C3%5D)%20))
 
-
-## Transpilers on the bropwser: using Google Traceur 
 ![alt text](http://leolanese.com/tc.png "Google Traceur")
-
-Please add this code before the </body> tag in order to use the traceur package:
-```javascript
-//add this code before </body>
-<script type="module">
-    // write your code here
-</script>
+## Google Traceur Transpilers: using Transpilers on the terminal
+### Google traceur-compiler transpiler
+```
+git clone https://github.com/google/traceur-compiler.git
+cd traceur-compiler
+npm install
+make
 ```
 
-### And add this code in the head section in order to use the experimentals 
-```javascript
-// optional: add this code inside <head></head>
-<script>
-    traceur.options.experimental = true;
-</script>
+```
+// go to:
+cd example
+open hello.html
+
+// Now let edit the ES6 JS: 
+example/hello.html
 ```
 
-## Lets include the traceur.js and bootstrap.js
-```javascript
-<!DOCTYPE html>
+```
+/traceur-compiler/
+./traceur --version
+nano test.js
+```
+
+```
+class Greeter {
+  sayHi(name = 'Anonymous') {
+    console.log(`Hi ${name}!`);
+  }
+}
+var greeter = new Greeter();
+greeter.sayHi();
+```
+
+```
+sudo ./traceur --out out/test.js --script test.js
+```
+
+### This generate: 
+```
+/out/test.js
+```
+
+### Using using Transpilers on the browser: We take the 'out/test.js' on the browser
+```
+// we are going to use the: 'out/test.js'
 <html>
   <head>
-  <script>
-    traceur.options.experimental = true;
-  </script>
+    <script src="bin/traceur.js"></script>
+    <script src="out/test.js"></script>
   </head>
   <body>
-    <h1 id="message"></h1>
-    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
-    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
-    <script type="module">
-        (function() {
-          'use strict'
-          for (let i = 0; i < 3; i++) {
-            console.log('loop:', i); // 0,1,2
-          }
-          console.log('after loop:', typeof i); // after loop: "undefined"
-        })();
-    </script>
-    <h1>Testing traceur</h1>
+    Check your console…
   </body>
 </html>
 ```
-Notice that this script tag is using "module" as its type instead of the usual "text/javascript": that's how bootstrap.js knows to compile the ES6 source into ES5 and insert the ES5 back in the page. When the page loads, it finds all of the ```<script type="module">``` tags, compiles their contents down to vanilla Javascript and then has the browser evaluate it.
 
 ### Try it out in the browser
 [Google Traceur Playgroud](https://google.github.io/traceur-compiler/demo/repl.html) 
@@ -897,7 +907,17 @@ Notice that this script tag is using "module" as its type instead of the usual "
 ![alt text](http://www.leolanese.com/gulp.svg "gulp")
 ![alt text](http://www.leolanese.com/grunt.svg "grunt")
 # Automatic Transpilers: Building Automatically using Gulp, Babel, NodeJS: Using ES6
+### Small demo project demonstrates how to use the ES6 transpiler Babel on Node.js
 [gulp-es6-seed](https://github.com/sirwilliam/gulp-es6-seed)
+
+### Install Node dependencies
+```
+npm install
+```
+### run transpiled on terminal:
+```
+babel-node point.js // My point: {"x":7,"y":4}
+```
 
 ----------------------------------------------------------------------------------------------------------------------
 # 4- My favourites ES6 Playgrounds and Resources:
