@@ -1,4 +1,4 @@
-# ES6 workshop
+# Introduction to ES6 with examples workshop
 ## The road to ECMAScript 6: "New solutions for old JS problems"
 
 ![alt text](http://www.leolanese.com/javascript.svg "JS")
