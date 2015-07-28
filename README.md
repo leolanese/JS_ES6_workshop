@@ -835,7 +835,7 @@ The resolve() function is called when the executor has finished successfully in 
 ### ES6 native Promise pattern
 ```javascript
 // Defining: ES6 Promise Constructor
-var promise = new Promise(function(resolve, reject) {
+var promise = new Promise(function(resolve, reject) { // executor function with: resolve and reject function arguments
   if(true) {
     resolve("worked!");  
   } else {
@@ -853,8 +853,9 @@ promise
 ```  
 [Ej1: Native Promises](http://www.es6fiddle.net/ibth213t/)
 
-### ES6 Promises Defining Mock Data Service
+### ES6 Promises 
 ```javascript
+// Defining Mock Data Service
 var data;
 function findData(){
   return new Promise(function (resolve, reject){
@@ -865,9 +866,8 @@ function findData(){
     }
   });
 }
-```
-### ES6 Promises Using Mock Data Service
-```javascript
+
+// Using Mock Data Service
 promise
   .then(function(data){
     console.log(data);
@@ -908,7 +908,7 @@ foo.then(function(value) {
 ![alt text](http://leolanese.com/es6-5.png "transpilers")
 
 How to start using ES6 now?
-```it’s possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
+```it's possible to use ES6 today while still targeting older browsers. This is possible thanks to "transpilers"``` that can convert ES6 code to ES5, we can implement a transpiler into our development workflow and use ES6 that's goign to be automaticly transform into ES5 using Gulp or Grunt .
 
 ## Transpilers: using Babel
 ![alt text](http://www.leolanese.com/babel.svg "babel")
