@@ -825,6 +825,13 @@ As the Promise.prototype.then and Promise.prototype.catch methods return promise
 ![alt text](https://mdn.mozillademos.org/files/8633/promises.png "EcmaScript6")
 Source: developer.mozilla.org
 
+``
+New ES6 promises are created through the Promise constructor. This constructor accepts a single argument, which is a function (called the executor) containing the code to execute when the promise is added to the job queue. The executor is passed two functions as arguments, resolve() and reject(). 
+``
+``
+The resolve() function is called when the executor has finished successfully in order to signal that the promise is ready to be resolved while the reject() function indicates that the executor has failed.
+``
+
 ### ES6 native Promise pattern
 ```javascript
 // Defining: ES6 Promise Constructor
@@ -869,6 +876,22 @@ promise
     console.log(error);
   })
 ```
+
+### ES6 Chaining Promises
+```javascript
+let foo = new Promise(function(resolve, reject) {
+    return resolve(10);
+});
+
+foo.then(function(value) {
+    console.log(value);
+}).then(function() {
+    console.log("Finished Process");
+});
+// 10
+// Finished Process
+```
+[Eg: Chaining Promises](http://www.es6fiddle.net/icn4snjc/)
 
 =======================================================================================================================
 -- 11. Rest parameters      
