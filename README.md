@@ -877,21 +877,23 @@ promise
   })
 ```
 
-### ES6 Chaining Promises
+### ES6 Chaining Promises: Returning Values in Promise Chains
 ```javascript
 let foo = new Promise(function(resolve, reject) {
-    return resolve(10);
+    return resolve(1);
 });
 
-foo.then(function(value) {
-    console.log(value);
-}).then(function() {
-    console.log("Finished Process");
+foo.then(function(value) {		// value = 1 from executor 	
+    console.log(value);         // "1"
+    return value + 1;			// fulfillment handler returns 2	
+}).then(function(value) {
+    console.log(value);         // "2"
+    return value + 1;			// fulfillment handler returns 3
+}).then(function(value) {
+    console.log(value);         // "3"
 });
-// 10
-// Finished Process
 ```
-[Eg: Chaining Promises](http://www.es6fiddle.net/icn4snjc/)
+[Eg: Chaining Promises](http://www.es6fiddle.net/icn5doba/)
 
 =======================================================================================================================
 -- 11. Rest parameters      
