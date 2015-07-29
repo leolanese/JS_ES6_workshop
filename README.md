@@ -129,25 +129,32 @@ The variables declared with 'var' are scoped to the function block (or global if
 On es5var : The variable i, declared with var keyword, is hoisted and is available to the whole function.
 On es6let: The variable i is scoped to the for loop. It's visible just inside the parentheses and the curly braces of the loop.
 ```javascript
-// ES5 using var
 function es5var(){
-	// i is visible here due to variable hoisting
+    // i is visible here due to variable hoisting
    for(var i=0; i<10; i++){
-	  console.log(i);
-	  // of course i is available here 
+      console.log(i);
+      // of course i is available here 
    }
    // i is available as well 
+   console.log(i);
 }
+es5var();
+
+
 // ES6 using let
 function es6let(){
-	// i is NOT visible here
+    // i is NOT visible here
    for(let i=0; i<10; i++){
-	  console.log(i);
-	  // i IS BLOCK SCOPE to this block {}
+      console.log(i);
+      // i IS BLOCK SCOPE to this block {}
    }
    // i is NOT available here
+   // console.log(i);
 }
+es6let();
 ```
+[Eg. difference ES5 'var' and ES6 'let'](http://www.es6fiddle.net/icoyi4u4/)
+
 
 ### Creating Objects:
 ```javascript
