@@ -117,10 +117,37 @@ Angular2 production build is being transpiled to ES5 in order to be executable b
 ### let()
 Up to ES6 variables are always function scoped: So, ``no matter where you declare your variable, these are going to be hoisted on the top of the scope.``
 
-Variable declared using let will only be available in the ‘current block’ instead of the ‘entire function’ when using var.
-The let keyword allows you to define variables within the scope of the block (block scoping).
-
 >  Don't replace let for var
+
+### Difference bettween 'var' and 'let':
+The difference is **scope** (the location where variables lives): 
+The variables declared with 'var' are scoped to the function block (or global if outside a function block) while those declared with 'let' are scoped to the enclosing block (or global if outside any block) which may be smaller than the function block.
+
+> In other words: Variable declared using 'let' will only be available in the 'current block', using var will be on the 'entire function'. The let keyword allows you to define variables within the scope of the block (block scoping).
+
+### Eg. Difference between 'var' and 'let':
+On es5var : The variable i, declared with var keyword, is hoisted and is available to the whole function.
+On es6let: The variable i is scoped to the for loop. It's visible just inside the parentheses and the curly braces of the loop.
+```javascript
+// ES5 using var
+function es5var(){
+	// i is visible here due to variable hoisting
+   for(var i=0; i<10; i++){
+	  console.log(i);
+	  // of course i is available here 
+   }
+   // i is available as well 
+}
+// ES6 using let
+function es6let(){
+	// i is NOT visible here
+   for(let i=0; i<10; i++){
+	  console.log(i);
+	  // i IS BLOCK SCOPE to this block {}
+   }
+   // i is NOT available here
+}
+```
 
 ### Creating Objects:
 ```javascript
