@@ -163,8 +163,9 @@ var o1 = "test";
 var o2 = "test2";
 var o3 = { o1:o1, o2:o2 };
 console.log( o3 ); // Object {o1: "test1", o2: "test2"}
-[eg1:](http://www.es6fiddle.net/icg82t9k/)
 ```
+[eg1:](http://www.es6fiddle.net/icg82t9k/)
+
 ```javascript
 // ES6
 let o1 = "test1";
