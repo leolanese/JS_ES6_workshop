@@ -1108,6 +1108,7 @@ UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understand
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 Angular2 Using ES6 Starter | [Dan Wahlin](https://github.com/DanWahlin/Angular2-Starter)
 Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E), Karma, Protractor, Jasmine, TypeScript, and Webpack by AngularClass  | [Danth Areja](https://github.com/angular-class/angular2-webpack-starter)
+JavaScript — Just another introduction to ES6  | [medium.com](https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -1115,6 +1116,7 @@ Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services
 # 5- What's next?
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
 <small>Source: lovemynokia.com</small>
+
 
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
