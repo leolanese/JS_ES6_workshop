@@ -1122,6 +1122,7 @@ Looking for   | Go to
 Angular2 Using ES6 Starter | [Dan Wahlin](https://github.com/DanWahlin/Angular2-Starter)
 Angular2 Webpack Starter kit featuring Angular2 (Router, Http, Forms, Services, Tests, E2E), Karma, Protractor, Jasmine, 
 TypeScript, and Webpack by AngularClass  | [Danth Areja](https://github.com/angular-class/angular2-webpack-starter)
+TypeScript Deep Dive | [Basarat Ali Syed](http://basarat.gitbooks.io/typescript/content/)
 
 
 
