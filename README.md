@@ -1086,10 +1086,11 @@ babel-node point.js // My point: {"x":7,"y":4}
 ## ES6 Resources
 Looking for   | Go to
 ------------- | -------------
-ES6Features  | [ES6](https://github.com/lukehoban/es6features)
-ECMAScript 6 compatibility Table | [Can I use ES6](http://kangax.github.io/compat-table/es6/)
+ES6Features  | [ECMAScript standard](https://github.com/lukehoban/es6features)
+ECMAScript 6 compatibility Table | [Can I use ES6?](http://kangax.github.io/compat-table/es6/)
 Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
 Harmony Specification | [ECMA-262 Edition-6](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts)
+ES6 Katas | [Just learn a bit of ES6 daily](http://es6katas.org/)
 
 ## ES6 transpilers playground
 Looking for   | Go to
@@ -1121,6 +1122,7 @@ Looking for   | Go to
 ------------- | -------------
 Angular2 Using ES6 Starter | [Dan Wahlin](https://github.com/DanWahlin/Angular2-Starter)
 Angular2 Webpack Starter kit featuring Angular2   | [Danth Areja](https://github.com/angular-class/angular2-webpack-starter)
+Simple ES6 Modules starter project that uses Gulp, Babel and SystemJS | [Dan Wahlin - John Papa](https://github.com/DanWahlin/ES6-Modules-Starter)
 TypeScript Deep Dive | [Basarat Ali Syed](http://basarat.gitbooks.io/typescript/content/)
 
 
