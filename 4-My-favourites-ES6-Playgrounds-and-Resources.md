@@ -27,4 +27,5 @@ Exploring-es6  Book        | [Axel Rauschmayer](https://leanpub.com/exploring-es
 UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understandinges6/read)
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 JavaScript-Just another introduction to ES6  | [medium.com](https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f)
+ES6-Examples | [gokulkrishh](https://github.com/gokulkrishh/ES6-Examples/tree/master/Examples)
 
