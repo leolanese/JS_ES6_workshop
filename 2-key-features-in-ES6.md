@@ -167,6 +167,8 @@ console.log(no);
 ```
 [Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
 
+**[⬆ back to top](#table-of-contents)**
+
 =======================================================================================================================
 -- 02. Arrow functions: => [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions)
 ```javascript
@@ -209,7 +211,7 @@ console.log( square(10) );
 -- 3- Block-level scope: {} [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-block-level-function-declarations-web-legacy-compatibility-semantics)
 ### This creates a Temporal Dead Zone
 
-
+**[⬆ back to top](#table-of-contents)**
 
 =======================================================================================================================
 -- 4- Classes and inheritance: class, extends, setters, getters, super, etc [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-functions-and-classes)
@@ -323,7 +325,7 @@ console.log(car)
 ```
 [Ej3: ES5 Vs. ES6: ES6 version](http://www.es6fiddle.net/ibtfwm70/)
 
-
+**[⬆ back to top](#table-of-contents)**
 =======================================================================================================================
 -- 05 Modules [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-scripts-and-modules)
 Modules are stored in files. 
@@ -346,6 +348,8 @@ console.log( square(11) ); // 121
 console.log( diag(4, 3) ); // 5
 ```
 [Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
+
+**[⬆ back to top](#table-of-contents)**
 
 =======================================================================================================================
 -- 06. New utility methods for Strings, Arrays and additions to the Number and Object object
@@ -621,11 +625,13 @@ console.log( obj[_id]() ); // ID007
 ```
 [Ej1: computed property keys](http://www.es6fiddle.net/ibnrh8ot/)
 
+**[⬆ back to top](#table-of-contents)**
+
 =======================================================================================================================
 -- 07. Destructuring [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-binding-patterns)
 Extract data from arrays or objects using a syntax that mirrors the construction of array and object literals
 
-
+**[⬆ back to top](#table-of-contents)**
 =======================================================================================================================
 -- 08. Generators: yield(pause), next()(resume), function*/ function * [ecma-international.org/](http://www.ecma-international.org/ecma-262/6.0/#sec-generator-abstract-operations)
 With ES6 generators creates a function, which may be paused and resume execution, one or many times, allowing other code to run during these paused periods.
@@ -711,6 +717,7 @@ console.log( it.next( 13 ) );   // { value:42, done:true }
 [what-are-generators (tobyho.com)](http://tobyho.com/2013/06/16/what-are-generators/)
 [es6-generators (davidwalsh)](http://davidwalsh.name/es6-generators)
 
+**[⬆ back to top](#table-of-contents)**
 =======================================================================================================================
 -- 09. Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
 
@@ -833,14 +840,18 @@ foo.then(function(value) {		// value = 1 from executor
 });
 ```
 [Eg: Chaining Promises](http://www.es6fiddle.net/icn5doba/)
+**[⬆ back to top](#table-of-contents)**
 
 =======================================================================================================================
 -- 11. Rest parameters      
+**[⬆ back to top](#table-of-contents)**
 
 =======================================================================================================================
 -- 12. Set
+**[⬆ back to top](#table-of-contents)**
 
 =======================================================================================================================
 -- 13. Template Strings
+**[⬆ back to top](#table-of-contents)**
 
 ----------------------------------------------------------------------------------------------------------------------
