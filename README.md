@@ -27,7 +27,8 @@ Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd)
 1. What is ES6? 
 2. Key Features in ES6
 3. When can I start using ES6? 
-4. What next?
+4. My favourites ES6 Playgrounds and Resources.
+5. What next?
 
 ----------------------------------------------------------------------------------------------------------------------
 # 1- What is ES6?: 
@@ -1112,7 +1113,7 @@ JavaScript-Just another introduction to ES6  | [medium.com](https://medium.com/s
 
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
-# 5- What's next?
+# 5 - What's next?
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
 <small>Source: lovemynokia.com</small>
 
