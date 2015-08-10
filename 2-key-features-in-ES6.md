@@ -1,3 +1,4 @@
+## Table of contents
 # 2- Key Features in ES6:
 
 ![alt text](http://www.leolanese.com/es6.svg "JS")
