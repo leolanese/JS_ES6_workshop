@@ -2,6 +2,16 @@
 ![alt text](http://lovemynokia.com/wp-content/uploads/2014/11/the-future-next-right.jpg "What's Next?")
 <small>Source: lovemynokia.com</small>
 
+## Keep walking:
+- Keep sharing ideas: Create your own workshop and share your idea and the new trends
+
+## Ideas:
+- SASS
+- ReactJS
+- AngularJS 2
+- IONIC and AngularJS 2
+- RWD
+
 
 ## Going to the next level:
 Looking for   | Go to
