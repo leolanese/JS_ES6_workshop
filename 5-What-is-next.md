@@ -3,9 +3,9 @@
 <small>Source: lovemynokia.com</small>
 
 ## Keep walking:
-- Keep sharing ideas: Create your own workshop and share your idea and the new trends
+Working in New Technology can be quite demanding, yet very rewarding. I believe surruonding yourself with like-minded people is essential to your success and progress within your professional life. The group in accordance, aims to help each others, giving a portion of knowledge to others, creating your own workshop and sharing ideas and new trends.
 
-## Ideas:
+## Topics ideas:
 - SASS
 - ReactJS
 - AngularJS 2
