@@ -144,17 +144,17 @@ console.log("let -->", j); // error j is not defined because of let
 [Ej2: let w/looping](http://www.es6fiddle.net/ibwh8qpk/)
 
 ```javascript
-for (let l = 0; l < 3; l++) {
-console.log('loop:', l);
-}
-console.log('after loop:', typeof l);
-
 for (var v = 0; v < 3; v++) {
 console.log('loop:', v);
 }
-console.log('after loop:', typeof v);
+console.log('after loop:', typeof v); // after loop: number
+
+for (let l = 0; l < 3; l++) {
+console.log('loop:', l);
+}
+console.warn('after loop:', typeof l); // after loop: undefined
 ```
-[Ej3: let w/looping](http://www.es6fiddle.net/ibwh5v5x/)
+[Ej3: let w/looping](http://www.es6fiddle.net/id8jh31i/)
 
 
 ### const()
