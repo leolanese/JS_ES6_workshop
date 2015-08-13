@@ -2,6 +2,7 @@
 
 ![alt text](http://www.leolanese.com/github.svg "github")
 
+
 ## ES6 Resources
 Looking for   | Go to
 ------------- | -------------
@@ -10,6 +11,7 @@ ECMAScript 6 compatibility Table | [Can I use ES6?](http://kangax.github.io/comp
 Test My  browser     | [ES6 checker](http://ruanyf.github.io/es-checker/)
 Harmony Specification | [ECMA-262 Edition-6](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts)
 ES6 Katas | [Just learn a bit of ES6 daily](http://es6katas.org/)
+
 
 ## ES6 transpilers playground
 Looking for   | Go to
@@ -20,6 +22,7 @@ Traceur        |[google.github.io](http://google.github.io/traceur-compiler/demo
 ES6Fiddle          |[ES6Fiddle](http://www.es6fiddle.net/)
 ESnext (This project has merged with Babel)   |[esnext.github.io](http://esnext.github.io)
 
+
 ## ES6 Documentation
 Looking for   | Go to
 ------------- | -------------
@@ -28,4 +31,5 @@ UnderstandingES6  Book      | [Nicholas C. Zakas](https://leanpub.com/understand
 ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 JavaScript-Just another introduction to ES6  | [medium.com](https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f)
 ES6-Examples | [gokulkrishh](https://github.com/gokulkrishh/ES6-Examples/tree/master/Examples)
+ECMAScript 6 equivalents in ES5 | [Addy Osmani](https://github.com/addyosmani/es6-equivalents-in-es5)
 
