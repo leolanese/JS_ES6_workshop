@@ -1,0 +1,23 @@
+2.5-Modules [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-scripts-and-modules)
+Modules are stored in files. 
+The goal for ECMAScript 6 modules is to create a format that both users of CommonJS and of AMD are happy with.
+
+```javascript
+//------ lib.js ------
+export const sqrt = Math.sqrt;
+
+export function square(x) {
+    return x * x;
+}
+export function diag(x, y) {
+    return sqrt(square(x) + square(y));
+}
+
+//------ main.js ------
+import { square, diag } from ‘src/lib';
+console.log( square(11) ); // 121
+console.log( diag(4, 3) ); // 5
+```
+[Ej1: NotWorkingExample](http://www.es6fiddle.net/ibnjc164/)
+
+**[⬆ back to top](#table-of-contents)**
