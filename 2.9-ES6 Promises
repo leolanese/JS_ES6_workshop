@@ -1,4 +1,4 @@
--- 2.10-ES6 Promises [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-promise-executor)
+-- 2.9-ES6 Promises [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-promise-executor)
 
 ES6 standardise promises and remove the external dependencies currently required to use promises.
 
