@@ -1,0 +1,151 @@
+## 2.1-Block Scope: let and const
+### let()
+Up to ES6 variables are always function scoped: So, ``no matter where you declare your variable, these are going to be hoisted on the top of the scope.``
+
+>  Don't replace let for var
+
+### Difference bettween 'var' and 'let':
+The difference is **scope** (the location where variables lives): 
+The variables declared with 'var' are scoped to the function block (or global if outside a function block) while those declared with 'let' are scoped to the enclosing block (or global if outside any block) which may be smaller than the function block.
+
+> In other words: Variable declared using 'let' will only be available in the 'current block', using var will be on the 'entire function'. The let keyword allows you to define variables within the scope of the block (block scoping).
+
+### Eg. Difference between 'var' and 'let':
+On es5var : The variable i, declared with var keyword, is hoisted and is available to the whole function.
+On es6let: The variable i is scoped to the for loop. It's visible just inside the parentheses and the curly braces of the loop.
+```javascript
+function es5var(){
+    // i is visible here due to variable hoisting
+   for(var i=0; i<10; i++){
+      console.log(i);
+      // of course i is available here 
+   }
+   // i is available as well 
+   console.log(i);
+}
+es5var();
+
+
+// ES6 using let
+function es6let(){
+    // i is NOT visible here
+   for(let i=0; i<10; i++){
+      console.log(i);
+      // i IS BLOCK SCOPE to this block {}
+   }
+   // i is NOT available here
+   // console.log(i);
+}
+es6let();
+```
+[Eg. difference ES5 'var' and ES6 'let'](http://www.es6fiddle.net/icoyi4u4/)
+
+
+### Creating Objects:
+```javascript
+// ES5
+var o1 = "test";
+var o2 = "test2";
+var o3 = { o1:o1, o2:o2 };
+console.log( o3 ); // Object {o1: "test1", o2: "test2"}
+```
+[eg1:](http://www.es6fiddle.net/icg82t9k/)
+
+```javascript
+// ES6
+let o1 = "test1";
+let o2 = "test2";
+let o3 = { o1,o2 };
+console.log( o3 ); // Object {o1: "test1", o2: "test2"}
+```
+[eg1:](http://www.es6fiddle.net/icg84b9e/)
+
+## Create var from Arrays:
+```javascript
+// ES5
+var c = [1,2,3];
+var p = c[0];
+console.log(p);
+```
+```javascript
+// ES6
+var c = [1,2,3];
+var [a1,a2,a3] = c;
+console.log(1,2,3)
+
+## Creating Arrays:
+```javascript
+// ES6
+Array.of(1, 2, 3); 
+
+```
+
+#### let w/function with scope and block scope:
+```javascript
+// scope
+function fScope() {
+    if(true) {
+        var sun = 'here'; // sun is "hoisted" to the function block
+    }
+    console.log('sun is ' + sun); // sun is visible
+}
+fScope();
+
+
+// block scope
+// the let keyword allows you to define variables within the scope
+function fBlockScoped() {
+    if(true) {
+        let sun = 'here'; // sun is NOT "hoisted" out of this block
+    }
+    console.log('sun is ' + sun); // sun is not defined
+}
+fBlockScoped();
+```
+[Ej1: let w/function](http://www.es6fiddle.net/ibt75xzh/)
+
+#### let w/looping:
+```javascript
+// error on j2
+for(var v = 0; v < 10; v++) {
+    // 'v' is only available within the for block
+   console.log(v);
+   //var v2 = v;
+}
+
+for(let j = 0; j < 10; j++) {
+    // 'j' is only available within the for block
+   console.log(j);
+   let j2 = j;
+}
+console.log("var -->", v); 
+console.log("let -->", j); // error j is not defined because of let
+```
+[Ej2: let w/looping](http://www.es6fiddle.net/ibwh8qpk/)
+
+```javascript
+for (var v = 0; v < 3; v++) {
+console.log('loop:', v);
+}
+console.log('after loop:', typeof v); // after loop: number
+
+for (let l = 0; l < 3; l++) {
+console.log('loop:', l);
+}
+console.warn('after loop:', typeof l); // after loop: undefined
+```
+[Ej3: let w/looping](http://www.es6fiddle.net/id8jh31i/)
+
+
+### const()
+We will be able to create constants and make sure its value won’t be changed
+```javascript
+const no = [{'here':'there'}, {'owesome':'ES6'}];
+console.log(no);
+
+// var no = [{'no':'posible'}];
+console.log(no);
+```
+[Ej1: const](http://www.es6fiddle.net/ibs2z9yg/)
+
+**[⬆ back to top](#table-of-contents)**
