@@ -1,0 +1,29 @@
+09. Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
+
+```javascript
+var m = new Map();
+
+m.set("n", "nn");
+console.log( m.size ); // 1
+
+m.set("n1", "nn1");
+console.log( m.size ); // 2
+
+console.log( m.get("n") ); // nn
+console.log( m.has("n1") ); // true
+console.log( m.delete("n1") ); // true
+console.log( m.has("n1") ); // false
+
+m.forEach(function(value, key){ console.log( key + ' maps to ' + value) }) // n maps to nn
+```
+[Ej1: Map](http://www.es6fiddle.net/icg8kb43/)
+
+### WeakMap
+- Similar to Map
+- The word "weak" refers to weak references. A weak reference is an object reference that is ignored by the garbage collector.
+- Keys must be objetcs
+- keys are garbage-collected (usefull to prevent memory leaks)
+- Can't be iterated
+- Cannot get the size of a WeakMap 
+- Cannot iterate over it's keys or values
+- WeakSet has no size property, or a way of iterating its members (references are weak so can be destroyes without notice)
