@@ -5,14 +5,13 @@
 
 01. Block Scope
 02. Arrow functions
-03. Block-level scope
-04. Classes
-05. Modules
-06. New utility methods for Strings and Arrays
-07. Destructuring
-08. Generators
-09. Map
-10. Promises
+03. Classes
+04. Modules
+05. New utility methods for Strings and Arrays
+06. Destructuring
+07. Generators
+08. Map
+09. Promises
 
 =======================================================================================================================
 -- 01. Block Scope: let and const
