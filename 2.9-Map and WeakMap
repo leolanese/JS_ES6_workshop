@@ -1,4 +1,4 @@
-09. Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
+2.9-Map and WeakMap: set, get, delete [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-map-iterable)
 
 ```javascript
 var m = new Map();
