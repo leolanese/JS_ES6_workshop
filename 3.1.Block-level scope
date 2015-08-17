@@ -1,2 +1,0 @@
--- 3. Block-level scope: {} [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-block-level-function-declarations-web-legacy-compatibility-semantics)
-### This creates a Temporal Dead Zone
