@@ -3,7 +3,7 @@
 
 ![alt text](http://www.leolanese.com/es6.svg "JS")
 
-01. Block Scope
+01. Block-level Scope
 02. Arrow functions
 03. Classes
 04. Modules
