@@ -1,0 +1,85 @@
+-- 2.8-Generators: yield(pause), next()(resume), function*/ function * [ecma-international.org/](http://www.ecma-international.org/ecma-262/6.0/#sec-generator-abstract-operations)
+With ES6 generators creates a function, which may be paused and resume execution, one or many times, allowing other code to run during these paused periods.
+
+> ES6 generator functions are "cooperative" in their concurrency behavior. 
+
+This  ideal for creating functions that should be exited and continued later: we run the generator and yield when we restart the generator again, we will send a value back in, and whatever we send in will be the computed result of that yield ___ expression.
+
+> Generator objects are both iterator and iterable.
+
+> Provides a solutions for a endless callback problem
+
+What is a Generator?
+- it is now possible to suspend code execution
+- Factory for special type of function declared using function* or function *
+- Can be exited at any point using: yield
+- Resumes at same point and same state if invoked back again
+- Provides 2-way communication: 
+We trigger the generator, the yield value it sends out, generator is paused, later (at any time), generator is trigger again thnen is restarted and will give a value back.
+
+
+```javascript
+// both are valids
+function* foo(){ }
+
+function *foo(){ }
+```
+
+```javascript
+function *foo() {
+    yield 1;
+    return 2;
+}
+
+var it = foo();
+
+console.log( it.next() ); // { value:1, done:false }
+console.log( it.next().value ); // undefined
+console.log( it.next() ); // { value:2, done:true }
+console.log( it.next() ); // { value:undefined, done:true }
+console.log( it.next().value ); // undefined
+console.log( it.next().done ); // true
+```
+[Eg1: ES6 generators: value, done](http://www.es6fiddle.net/icgaoklw/)
+
+
+```javascript
+function* counter(){
+  var index = 0;
+  while(true) yield index++;
+}
+var c = counter();
+
+console.log( c.next() ); // Object {value: 0, done: false}
+console.log( c.next().value ); // 1
+console.log( c.next().done ); // false
+```
+[eg2: ES6 generators: value, done](http://www.es6fiddle.net/icgaluf9/)
+
+
+```javascript
+function *foo(x) {
+    var y = 2 * (yield (x + 1));
+    var z = yield (y / 3);
+    return (x + y + z);
+}
+
+var it = foo( 5 );
+
+// note: not sending anything into <code>next()</code> here
+console.log( it.next() );       // { value:6, done:false }
+console.log( it.next( 12 ) );   // { value:8, done:false }
+console.log( it.next( 13 ) );   // { value:42, done:true }
+```
+[Eg2: ES6 generators: send](http://www.es6fiddle.net/ic3t2ex1/)
+
+
+### Some frameworks already using Generators:
+[CO Framework](https://github.com/tj/co)
+[KAO Framework](http://koajs.com/#)
+
+### More about them: 
+[what-are-generators (tobyho.com)](http://tobyho.com/2013/06/16/what-are-generators/)
+[es6-generators (davidwalsh)](http://davidwalsh.name/es6-generators)
+
+**[⬆ back to top](#table-of-contents)**
