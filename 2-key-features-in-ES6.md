@@ -13,9 +13,6 @@
 08. Generators
 09. Map
 10. Promises
-11. Rest parameters
-12. Set
-13. Template Strings
 
 =======================================================================================================================
 -- 01. Block Scope: let and const
