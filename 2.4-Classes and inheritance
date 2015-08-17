@@ -1,0 +1,112 @@
+2.4-Classes and inheritance: class, extends, setters, getters, super, etc [ecma-international.org](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-functions-and-classes)
+ES6 Classes are simplre sugar over the prototype-based OO Pattern. 
+
+> Instead worrying about writing prototypes we are going to be writing sugar Classes in ES6.
+
+### classes, constructor, getters, and setters
+```javascript
+class Foo {
+  constructor(p1, p2) {
+    this.p1 = p1;
+    this.p2 = p2;
+  }
+
+  get name() {
+    return this.p1 + " " + this.p2;
+  }
+
+  set name(name) {
+    var names = name.split(" ");
+
+    this.p1 = names[0];
+    this.p2 = names[1];
+  }
+}
+
+var hello = new Foo("Hello", "World!");
+hello.world = "Hello World!";
+console.log(hello.world);
+```
+[Ej1: ES6 Classes and Contructor](http://www.es6fiddle.net/ibyylfm7/)
+
+> JS doesn't have classes, it does something that’s called prototypes JS will still have prototypes ES6 add syntactic sugar code on top of this.
+
+### extends
+```javascript
+class Car {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    toString() {
+        return '(${this.x}, ${this.y})';
+    }
+    static classMethod() {
+        return 'test';
+    }
+}
+
+// Point: Car class and Fiat: subclass
+class Fiat extends Car {
+    constructor(x, y, color) {
+        super(x, y);
+        this.color = color;
+    }
+    toString() {
+        return super.toString() + ' in ' + this.color;
+    }
+}
+
+console.log(typeof Car); // function :)
+let cp = new Fiat(10, 5, 'red'); // we can only invoke a class via new
+console.warn(cp); // function Fiat {x: 25, y: 8, color: "red"}
+console.log(cp instanceof Fiat); // true
+console.log(cp instanceof Car); // true
+
+// The prototype of a subclass is the superclass
+console.log( Object.getPrototypeOf( Car) ); // Car
+console.log( Object.getPrototypeOf( Fiat ).toString() ); //  means thats methods and properties are inherited function Car(x, y) {…}
+
+console.log( Fiat.classMethod() );
+```
+[Ej2: ES6 Inheritance](http://www.es6fiddle.net/ibnhqzdy/)
+
+## Classes
+```javascript
+function Car() {
+    
+  var that = this; //locally assign this that can be closed over
+    
+  that.speed = 0;
+
+  setInterval(function goFaster() {
+    //this has a different scope, but we can use the self variable to reference the parent "this"
+    that.speed += 5;
+      console.log('now going: ' + that.speed);
+  }, 2000);
+    
+}
+
+var car = new Car();
+console.warn(car)
+```
+[Ej3: ES5 Vs. ES6: ES5 version](http://jsfiddle.net/leolanese/uz9x15x7/)
+Vs.
+```javascript
+function Car() { //Note, we could use the new Class feature in ES6 instead
+
+  this.speed = 0;
+
+  setInterval(() => {
+    this.speed += 5; //this is from Car
+    console.log('now going: ' + this.speed);
+  }, 1000);
+
+}
+
+let car = new Car();
+console.log(car)
+```
+[Ej3: ES5 Vs. ES6: ES6 version](http://www.es6fiddle.net/ibtfwm70/)
+
+**[⬆ back to top](#table-of-contents)**
