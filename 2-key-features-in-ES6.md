@@ -5,15 +5,14 @@
 
 01. Block-level Scope
 02. Arrow functions
-03. Classes
+03. Classes and Inheritance
 04. Modules
 05. New utility methods for Strings and Arrays
 06. Destructuring assigments
 07. Generators
-08. Map
+08. Collections: Sets, Maps, Symbols, WeakMaps, WeakSets
 09. Promises
 10. Parameters: Default Parameters, Rest Parameters, Spread Operator, Destructured Parameters 
-11. Collections: Sets, Maps, Symbols, WeakMaps, WeakSets
 
 
 
