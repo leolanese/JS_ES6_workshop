@@ -32,4 +32,4 @@ ECMAScript 6 Tools | [Addy Osmani](https://github.com/addyosmani/es6-tools)
 JavaScript-Just another introduction to ES6  | [medium.com](https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f)
 ES6-Examples | [gokulkrishh](https://github.com/gokulkrishh/ES6-Examples/tree/master/Examples)
 ECMAScript 6 equivalents in ES5 | [Addy Osmani](https://github.com/addyosmani/es6-equivalents-in-es5)
-
+ES6 tower-of-babel | [Yosuke Furukawa](https://github.com/yosuke-furukawa/tower-of-babel)
