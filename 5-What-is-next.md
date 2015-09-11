@@ -20,3 +20,4 @@ Angular2 Using ES6 Starter | [Dan Wahlin](https://github.com/DanWahlin/Angular2-
 Angular2 Webpack Starter kit featuring Angular2   | [Danth Areja](https://github.com/angular-class/angular2-webpack-starter)
 Simple ES6 Modules starter project that uses Gulp, Babel and SystemJS | [Dan Wahlin - John Papa](https://github.com/DanWahlin/ES6-Modules-Starter)
 TypeScript Deep Dive | [Basarat Ali Syed](http://basarat.gitbooks.io/typescript/content/)
+Angular2 playground using TS and SystemJS | [pkozlowski-opensource](https://github.com/pkozlowski-opensource/ng2-play.ts)
