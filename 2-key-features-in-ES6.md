@@ -3,7 +3,7 @@
 
 ![alt text](http://www.leolanese.com/es6.svg "JS")
 
-01. Block-level Scope
+01. Block-level Scope: 'let' and 'const'
 02. Arrow functions
 03. Classes and Inheritance
 04. Modules
