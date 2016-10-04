@@ -13,7 +13,7 @@
 08. Collections: Sets, Maps, Symbols, WeakMaps, WeakSets
 09. Promises
 10. Parameters: Default Parameters, Rest Parameters, Spread Operator, Destructured Parameters 
-
+11. [NEW]Build-in methods
 
 
 **[⬆ back to top](#table-of-contents)**
