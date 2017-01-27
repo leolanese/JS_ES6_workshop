@@ -4,8 +4,6 @@ A comprehensible ES6 introdution by examples.
 
 by: <a href="http://twitter.com/LeoLaneseltd" target="_blank">Leo Lanese</a><br>
 
-# THANK YOU!
-
 --
 
 ## { 'L e o   L a n e s e',
