@@ -21,7 +21,7 @@ Further information:
 Looking for   | Go to
 ------------- | -------------
 Sources          | [View](https://www.google.com) 
-GITHUB        | [GITHUB](https://github.com/sirwilliam/ES6_workshop.git) 
+GITHUB        | [GITHUB](https://github.com/leolanese/ES6_workshop.git) 
 Twitter        |[LeoLanese Twitter](https://twitter.com/leolaneseltd) 
 
 ----
