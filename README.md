@@ -21,5 +21,5 @@ by: <a href="http://twitter.com/LeoLaneseltd" target="_blank">Leo Lanese</a><br>
 <a href="http://twitter.com/LeoLaneseltd" target="_blank">http://twitter.com/LeoLaneseltd</a><br>
 
 # Questions / Suggestion / Recommendation ?<br>
-<a href="mail:to">angularjs@leolanese.com</a><br>
+<a href="mail:to">developer@leolanese.com</a><br>
 
