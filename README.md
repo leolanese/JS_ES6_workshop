@@ -3,6 +3,7 @@
 A comprehensible ES6 introdution by examples. 
 
 ---
+
 ### :100: <i>Thanks!</i>
 #### Now, don't be an stranger. Let's stay in touch!
 
